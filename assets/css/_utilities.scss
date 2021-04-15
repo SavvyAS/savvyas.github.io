@@ -1,0 +1,36 @@
+.color-primary {
+  color: $color-primary;
+  &-dark {
+    color: $color-primary-dark;
+  }
+}
+
+.color-secondary {
+  color: $color-secondary;
+  &-dark {
+    color: $color-secondary-dark;
+  }
+}
+.mx-auto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mt {
+  margin-top: 1em;
+}
+.mb {
+  margin-bottom: 1em;
+}
+
+.my {
+  @extend .mt, .mb;
+}
+
+.relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

@@ -1,0 +1,32 @@
+@import './variables.scss';
+
+@mixin breakpoint-down-md {
+
+  @media screen and (max-width: map_get($breakpoints, md)) {
+    @content;
+  }
+}
+@mixin breakpoint-up-md {
+
+  @media screen and (min-width: map_get($breakpoints, md)) {
+    @content;
+  }
+}
+@mixin breakpoint-up-lg {
+
+  @media screen and (min-width: map_get($breakpoints, lg)) {
+    @content;
+  }
+}
+@mixin breakpoint-down-sm {
+
+  @media screen and (max-width: map_get($breakpoints, sm)) {
+    @content;
+  }
+}
+@mixin breakpoint-up-sm {
+
+  @media screen and (min-width: map_get($breakpoints, sm)) {
+    @content;
+  }
+}
