@@ -1,0 +1,147 @@
+{
+    "pages": {
+        "home": {
+            "metaTitle": "Savvy | Home",
+            "metaDescription": "Welcome to savvy!",
+            "heading": "Lorem ipsum dolor sit amet",
+            "ingress": "This is a short pich about savvy. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+            "clients": [
+                {
+                    "logoPath": "/images/vipps.svg",
+                    "backgroundPath": "/images/client-background-1.svg",
+                    "name": "Vipps"
+                },
+                {
+                    "logoPath": "/images/fdir.svg",
+                    "backgroundPath": "/images/client-background-2.svg",
+                    "name": "Fiskeridirektoratet"
+                },
+                {
+                    "logoPath": "/images/fjordtours.svg",
+                    "backgroundPath": "/images/client-background-3.svg",
+                    "name": "Fjord Tours"
+                },
+                {
+                    "logoPath": "/images/tv2.svg",
+                    "backgroundPath": "/images/client-background-4.svg",
+                    "name": "TV 2"
+                }
+            ]
+        },
+        "clients": {
+            "metaTitle": "Savvy | Clients",
+            "metaDescription": "These are our clients!",
+            "heading": "Our clients",
+            "ingress": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo.",
+            "clients": [
+                {
+                    "logoPath": "/images/vipps.svg",
+                    "backgroundPath": "/images/client-background-1-wide.svg",
+                    "name": "Vipps",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "websiteUrl": "#"
+                },
+                {
+                    "logoPath": "/images/fdir.svg",
+                    "backgroundPath": "/images/client-background-2.svg",
+                    "name": "Fiskeridirektoratet",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "websiteUrl": "#"
+                },
+                {
+                    "logoPath": "/images/fjordtours.svg",
+                    "backgroundPath": "/images/client-background-2-wide.svg",
+                    "name": "Fjord Tours",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "websiteUrl": "#"
+                },
+                {
+                    "logoPath": "/images/tv2.svg",
+                    "backgroundPath": "/images/client-background-4.svg",
+                    "name": "TV 2",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "websiteUrl": "#"
+                }
+            ]
+        },
+        "agency": {
+            "metaTitle": "Savvy | Agency",
+            "metaDescription": "This is our agency!",
+            "heading": "We are savvy people",
+            "ingress": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo.",
+            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+            "guilty": {
+                "heading": "Savvy & guilty",
+                "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                "webpageUrl": "http://guilty.no"
+            },
+            "list": {
+                "heading": "Whats's important for us;",
+                "items": [
+                    {
+                        "name": "Transparency",
+                        "modalContent": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus."
+                    },
+                    {
+                        "name": "Equality",
+                        "modalContent": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus."
+                    },
+                    {
+                        "name": "Adventurous",
+                        "modalContent": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus."
+                    }
+                ]
+            },
+            "team": [
+                {
+                    "imagePath": "/images/people/hakon.png",
+                    "name": "Håkon Kaurel",
+                    "title": "Title",
+                    "about": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "email": "hakon.kaurel@savvy.no"
+                },
+                {
+                    "imagePath": "/images/people/joachim.png",
+                    "name": "Joachim Carlsen",
+                    "title": "Title",
+                    "about": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "email": "joachim.carlsen@savvy.no"
+                },
+                {
+                    "imagePath": "/images/people/people-placeholder-wide.svg",
+                    "name": "Erlend Rekve",
+                    "title": "Title",
+                    "about": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "email": "erlend.rekve@savvy.no"
+                },
+                {
+                    "imagePath": "/images/people/people-placeholder.svg",
+                    "name": "Abdullah Shaheen",
+                    "title": "Title",
+                    "about": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "email": "abdullah.shaheen@savvy.no"
+                },
+                {
+                    "imagePath": "/images/people/people-placeholder-wide.svg",
+                    "name": "Håkon Trandal",
+                    "title": "Title",
+                    "about": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "email": "hakon.trandal@savvy.no"
+                }
+            ]
+        },
+        "contact": {
+            "metaTitle": "Savvy | Contact us",
+            "metaDescription": "Contact us now please",
+            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
+        }
+    },
+    "globals": {
+        "footer": {
+            "address": "Lars Hilles gate 30",
+            "postal": "5008 Bergen",
+            "email": "hei@savvy.no",
+            "telephone": "+47 00 00 00 00"
+        }
+    }
+}

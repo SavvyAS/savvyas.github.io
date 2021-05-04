@@ -1,433 +1,341 @@
 <template>
-    <div class="index">
-        <section>
-            <div class="header">
-                <Container narrow>
-                    <div class="header__top">
-                        <div class="header__hero-image">
-                            <div class="header__image-wrapper">
-                                <img
-                                    class="header__image"
-                                    src="~/assets/images/header-image-1.png"
-                                    alt=""
-                                />
-                                <img
-                                    class="header__graffiti"
-                                    src="~/assets/images/graffiti.svg"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="header__top-heading">
-                                <div class="container--narrow">
-                                    <h1>Lorem ipsum dolor sit amet.</h1>
-                                    <Button>The agency</Button>
-                                </div>
+    <div>
+        <header>
+            <HalfImageLayout>
+                <template #image>
+                    <NuxtImg
+                        src="/images/header-image-1.png"
+                        format="webp"
+                        width="628"
+                        height="790"
+                        sizes="sm:300px lg:600px"
+                        alt=""
+                    />
+                </template>
+                <template #default>
+                    <div class="row">
+                        <div class="column-2">
+                            <div class="header-text">
+                                <h1>{{ content.heading }}</h1>
+                                <NuxtLink to="/agency">
+                                    <Button tabindex="-1">The agency</Button>
+                                </NuxtLink>
                             </div>
                         </div>
                     </div>
-                </Container>
-                <Container narrow>
-                    <p class="paragraph-large">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quas voluptate temporibus totam, veritatis consequatur
-                        quasi itaque ab, commodi quibusdam rerum inventore
-                        ullam, ratione atque laudantium.
-                    </p>
-                </Container>
+                    <NuxtImg
+                        class="graffiti-1"
+                        src="/images/graffiti.svg"
+                        format="webp"
+                        width="413"
+                        height="408"
+                        alt=""
+                    />
+                </template>
+            </HalfImageLayout>
+        </header>
+        <div class="container">
+            <div class="row">
+                <p class="column-2 paragraph-large ingress">
+                    {{ content.ingress }}
+                </p>
             </div>
-        </section>
-        <section class="overflow-hidden">
-            <Container>
-                <div class="header__bottom">
-                    <div class="header__hero-image-bottom">
-                        <div class="header__image-bottom-wrapper">
-                            <img
-                                class="header__image-bottom"
-                                src="~/assets/images/header-image-2.png"
-                                alt=""
-                            />
-                        </div>
+        </div>
+
+        <section>
+            <HalfImageLayout>
+                <template #image>
+                    <NuxtImg
+                        src="/images/header-image-2.png"
+                        format="webp"
+                        width="628"
+                        height="790"
+                        sizes="sm:300px lg:600px"
+                        alt=""
+                    />
+                </template>
+                <template #default>
+                    <div class="overflow-text-container">
+                        <span
+                            v-for="i in 3"
+                            :key="'competence' + i"
+                            class="overflow-text-item"
+                        >
+                            <span v-for="comp in competence" :key="comp">
+                                {{ comp }}
+                                <span class="double-slash"></span>
+                            </span>
+                        </span>
                     </div>
-                    <div class="header__cool-text">
-                        <h2 class="competence">
-                            competence 1 // competence 2 // competence 3 //
-                            competence 4 // competence 5
-                        </h2>
-                        <h2 class="competence">
-                            competence 6 // competence 7 // competence 8 //
-                            competence 9 // competence 10
-                        </h2>
-                        <h2 class="competence">
-                            competence 11 // competence 12 // competence 13 //
-                            competence 14 // competence 15
-                        </h2>
-                    </div>
-                </div>
-            </Container>
+                </template>
+            </HalfImageLayout>
         </section>
         <section>
-            <Container>
-                <div class="clients">
-                    <div class="client-card">
-                        <div class="client-card__image-wrapper">
-                            <img
-                                class="client-card__background"
-                                src="~/assets/images/client-background-1.svg"
-                                alt=""
-                            />
-                            <img
-                                class="client-card__logo"
-                                src="~/assets/images/vipps.svg"
-                                alt=""
-                            />
-                        </div>
-                        <div class="client-card__body">
-                            <p>Client</p>
-                            <h3>Vipps</h3>
-                        </div>
+            <!-- <div class="marquee">
+                <span v-for="comp in competence" :key="comp">
+                    {{ comp }}
+                    <span class="double-slash"></span>
+                </span>
+            </div>
+            <div class="marquee-2">
+                <span v-for="comp in competence" :key="comp">
+                    {{ comp }}
+                    <span class="double-slash"></span>
+                </span>
+            </div>
+            <h1 class="color-primary">Test lol haha lol test</h1> -->
+            <h2 class="sr-only">Clients</h2>
+            <HorizontalScrollContainer>
+                <div
+                    v-for="(client, index) in content.clients"
+                    :key="client.name"
+                    class="client-card"
+                    :class="{ 'client-card--reverse': index % 2 !== 0 }"
+                >
+                    <div class="client-card__figure">
+                        <NuxtImg
+                            class="client-card__background"
+                            format="webp"
+                            :src="client.backgroundPath"
+                            width="520"
+                            height="660"
+                            alt=""
+                        />
+                        <img
+                            class="client-card__logo"
+                            loading="lazy"
+                            :src="client.logoPath"
+                            :alt="client.name + ' logo'"
+                        />
                     </div>
-                    <div class="client-card client-card--reverse">
-                        <div class="client-card__image-wrapper">
-                            <img
-                                class="client-card__background"
-                                src="~/assets/images/client-background-1.svg"
-                                alt=""
-                            />
-                            <img
-                                class="client-card__logo"
-                                src="~/assets/images/vipps.svg"
-                                alt=""
-                            />
-                        </div>
-                        <div class="client-card__body">
-                            <p>Client</p>
-                            <h3>Vipps</h3>
-                        </div>
-                    </div>
-                    <div class="client-card">
-                        <div class="client-card__image-wrapper">
-                            <img
-                                class="client-card__background"
-                                src="~/assets/images/client-background-1.svg"
-                                alt=""
-                            />
-                            <img
-                                class="client-card__logo"
-                                src="~/assets/images/vipps.svg"
-                                alt=""
-                            />
-                        </div>
-                        <div class="client-card__body">
-                            <p>Client</p>
-                            <h3>Vipps</h3>
-                        </div>
-                    </div>
-                    <div class="client-card client-card--reverse">
-                        <div class="client-card__image-wrapper">
-                            <img
-                                class="client-card__background"
-                                src="~/assets/images/client-background-1.svg"
-                                alt=""
-                            />
-                            <img
-                                class="client-card__logo"
-                                src="~/assets/images/vipps.svg"
-                                alt=""
-                            />
-                            <img
-                                class="graffiti-2"
-                                src="~/assets/images/graffiti_2.svg"
-                                alt=""
-                            />
-                        </div>
-                        <div class="client-card__body">
-                            <p>Client</p>
-                            <h3>Vipps</h3>
-                        </div>
+                    <div class="client-card__body">
+                        <p>Client</p>
+                        <span class="h3">{{ client.name }}</span>
                     </div>
                 </div>
-            </Container>
+            </HorizontalScrollContainer>
+            <NuxtImg
+                class="graffiti-2"
+                src="/images/graffiti_2.svg"
+                format="webp"
+                width="379"
+                height="431"
+                alt=""
+            />
         </section>
     </div>
 </template>
 
 <script>
+import HalfImageLayout from '~/layouts/HalfImageLayout'
+const { pages } = require('~/static/content.json')
 export default {
     name: 'Index',
-    data() {
-        return {
-            competence: 15,
-        };
+    components: {
+        HalfImageLayout
     },
-};
+    head() {
+        return {
+            title: this.content.metaTitle,
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: this.content.metaDescription
+                }
+            ]
+        }
+    },
+    computed: {
+        content() {
+            return pages.home
+        },
+        competence() {
+            return [...new Array(15).fill()].map(
+                (_, i) => `competence ${i + 1}`
+            )
+        }
+    }
+}
 </script>
 
 <style lang="scss" scoped>
-@import '~/assets/css/mixins.scss';
-
-.header {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-
-    &__top {
-        position: relative;
-        margin-bottom: 400px;
-    }
-
-    &__hero-image {
-        position: relative;
-    }
-    &__image-wrapper {
-        margin-left: auto;
-        position: relative;
-        // object-fit: cover;
-        // display: block;
-        // width: 100%;
-        // height: 100%;
-        width: 50%;
-        min-width: 360px;
-        height: auto;
-        @media (max-width: 992px) {
-            width: 360px;
-            height: 450px;
-            transform: translateX(40%);
-        }
-    }
-    &__image {
-        width: 100%;
-    }
-    &__graffiti {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        transform: translate(-50%, 50%);
-        width: 50%;
-        @media (max-width: 992px) {
-            position: static;
-            transform: translate(-50%, -25%);
-        }
-    }
-    &__top-heading {
-        position: absolute;
-        top: 25%;
-        left: 0;
-        width: 100%;
-    }
-
-    &__bottom {
-        position: relative;
-        margin-bottom: 200px;
-        margin-top: 200px;
-    }
-
-    &__hero-image-bottom {
-        position: relative;
-    }
-    &__image-bottom-wrapper {
-        margin-left: auto;
-        position: relative;
-
-        width: 360px;
-        height: 450px;
-        transform: translateX(40%);
-        @include breakpoint-up-md {
-            transform: translateX(0);
-            width: 50%;
-            height: auto;
-        }
-    }
-    &__image-bottom {
-        width: 100%;
-    }
-
-    &__cool-text {
-        position: absolute;
-        bottom: 10%;
-        text-align: center;
-    }
-}
-
-// .header__thing {
-//     position: relative;
-//     // margin-top: -400px;
-//     // @include breakpoint-up-md {
-//     //   margin-top: -450px;
-//     // }
-//     // @include breakpoint-up-lg {
-//     //   margin-top: -550px;
-//     // }
-// }
-
-// .header__cool-text {
-//     margin-top: -450px;
-//     margin-top: 0px;
-//     padding-bottom: 200px;
-// }
-
-.competence {
-    font-size: 42px;
-    line-height: 1.5;
+.marquee {
     white-space: nowrap;
-    width: 100vw;
-    animation: float 10s infinite linear;
-    z-index: 100;
-    @include breakpoint-up-md {
-        font-size: 72px;
+    animation: test 60s linear -20s infinite;
+}
+.marquee-2 {
+    white-space: nowrap;
+    animation: test2 60s linear 10s infinite;
+}
+
+@keyframes test {
+    from {
+        transform: translate3d(100vw, 0, 0);
+    }
+    to {
+        transform: translate3d(100vw, 0, 0) translate3d(-200%, 0, 0);
     }
 }
-.competence:first-child {
-    color: #830a77;
-    text-indent: -55%;
+@keyframes test2 {
+    from {
+        transform: translate3d(100vw, 0, 0) translate3d(-100%, 0, 0);
+    }
+    to {
+        transform: translate3d(100vw, 0, 0) translate3d(-300%, 0, 0);
+    }
 }
-.competence:nth-child(2) {
-    color: #712cff;
-    text-indent: -25%;
-}
-.competence:last-child {
-    color: #420cb1;
-    text-indent: -55%;
-}
-// .cool {
-//   position: relative;
-//   overflow: hidden;
-//   height: 100px;
-//   .test {
-//     display: block;
-//     overflow: hidden;
-//     font-size: 72px;
-//     font-weight:300;
-//     width: 200%;
-//     position: absolute;
-//     animation: m1 5s linear infinite;
-//     &-1 {
-//       float: left;
-//       width: 50%;
-//     }
-//     &-2 {
-//       float: left;
-//       width: 50%;
-//       // animation: m2 10s linear infinite;
-//       // animation-delay: 25s;
-//     }
-
-//     @keyframes m1 {
-//       0% {
-//         left: 0;
-//       }
-//       100% {
-//         left: -100%;
-//       }
-//     }
-
-//     @keyframes m2 {
-//       from {
-//         transform: translateX(100%);
-//       }
-//       to {
-//         transform: translateX(-100%);
-//       }
-//     }
-//   }
-// }
-
-h2.competence {
-    font-weight: 100;
-}
-
-.graffiti {
-    margin-top: -200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+.graffiti-2 {
+    max-width: base(19);
+    margin: auto;
+    margin-top: -#{base(9)};
     position: relative;
+
+    @media screen and (max-width: map-get($breakpoints, md)) {
+        max-width: base(9);
+        margin-top: 0;
+    }
 }
-.clients {
-    display: grid;
-    grid-auto-flow: column;
-    overflow: auto;
-    column-gap: 20px;
-    width: 100%;
-    @include breakpoint-up-md {
-        // column-gap: 120px;
-        grid-auto-flow: row;
-        column-gap: 10%;
-        grid-template-columns: repeat(2, 1fr);
+
+.double-slash {
+    height: 1em;
+    width: 0.75em;
+    display: inline-block;
+    position: relative;
+    &:before {
+        left: 0.5em;
+    }
+    &:after {
+        left: 0.3em;
+    }
+
+    &:after,
+    &:before {
+        content: '';
+        position: absolute;
+        border: 1px solid currentColor;
+        height: 100%;
+        top: 0.2em;
+        transform: rotate(30deg);
     }
 }
 
 .client-card {
     display: grid;
-    row-gap: 20px;
-    @include breakpoint-up-md {
-        width: 100%;
+    row-gap: base();
+
+    max-width: base(20);
+
+    @media screen and (min-width: map-get($breakpoints, md)) {
+        max-width: base(26);
     }
-    &__image-wrapper {
-        position: relative;
-        // width: 250px;
-        .grafitti-2 {
-            position: absolute;
-            bottom: 0;
-            left: 0;
+
+    p {
+        margin-bottom: base(0.5);
+    }
+    h3 {
+        margin: 0;
+        margin-bottom: base(1.5);
+    }
+
+    &--reverse {
+        @media screen and (min-width: map-get($breakpoints, md)) {
+            .client-card__figure {
+                grid-row-start: 2;
+            }
+            .client-card__body {
+                grid-row-start: 1;
+                display: grid;
+                align-content: end;
+                padding-top: base(7.5);
+            }
         }
     }
 
-    &__background {
+    &:not(.client-card--reverse) {
+        .client-card__body {
+            @media screen and (min-width: map-get($breakpoints, md)) {
+                padding-bottom: base(7.5);
+            }
+        }
+    }
+    &__figure {
+        position: relative;
         width: 100%;
-        object-fit: cover;
+    }
+
+    &__background {
+        position: relative;
+        display: block;
+        width: 100%;
     }
 
     &__logo {
         position: absolute;
-        width: 50%;
         top: 50%;
         left: 50%;
+        max-width: 80%;
         transform: translate(-50%, -50%);
-    }
-
-    &--reverse {
-        @include breakpoint-up-md {
-            .client-card__image-wrapper {
-                grid-row-start: 2;
-            }
-            .client-card__body {
-                align-content: end;
-            }
-        }
+        max-width: clamp(#{base(5)}, 50%, #{base(15)});
+        max-height: base(10);
+        object-fit: contain;
     }
 }
 
-.client-card__body {
-    height: 260px;
-    display: grid;
-    align-content: start;
+.overflow-text-container {
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    z-index: 10;
+    overflow: hidden;
 }
-.client-card__body h2 {
-    color: #712cff;
-    font-size: 42px;
-}
-.client-card__body p {
+
+.overflow-text-item {
+    white-space: nowrap;
     margin: 0;
+    text-indent: -50%;
+    font-size: base(3.6);
+    color: $color-primary;
+    display: block;
+    @media screen and (max-width: map-get($breakpoints, md)) {
+        font-size: base(2.5);
+    }
+
+    &:not(:first-of-type) {
+        margin-top: 0.5em;
+    }
+    &:first-of-type {
+        text-indent: -150%;
+        color: $color-secondary-dark;
+    }
+    &:last-of-type {
+        text-indent: -100%;
+        color: $color-primary-dark;
+        margin-bottom: 0.5em;
+    }
 }
 
-// h1 {
-//     color: #712CFF;
-//     font-size: 72px;
-//     line-height: 1.5;
-// }
-// p {
-//     color: #FCEAFC;
-//     font-size: 32px;
-//     line-height: 1.5;
-//     margin-top: 1rem;
-// }
+.ingress {
+    margin-top: base(15);
+    @media screen and (max-width: map-get($breakpoints, sm)) {
+        margin-top: base(10);
+    }
+}
 
-@keyframes float {
-    0% {
-        left: 0;
+.header-text {
+    margin-top: base(11);
+    @media screen and (max-width: map-get($breakpoints, xl)) {
+        margin-top: base(5);
     }
-    100% {
-        left: -200%;
-    }
+}
+
+.graffiti-1 {
+    position: absolute;
+    max-width: clamp(#{base(7)}, 40%, #{base(20)});
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 </style>

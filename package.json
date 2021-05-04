@@ -11,17 +11,24 @@
     "lint": "yarn lint:js"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-pro": "^5.15.3",
+    "@nuxtjs/style-resources": "^1.0.0",
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.15.3",
+    "vue-final-modal": "^2.1.0"
   },
   "devDependencies": {
+    "@nuxt/image": "^0.4.8",
     "@nuxtjs/eslint-config": "^6.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.9.0",
     "fibers": "^5.0.0",
+    "prettier": "2.2.1",
     "sass": "^1.32.8",
     "sass-loader": "10"
   }

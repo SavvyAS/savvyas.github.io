@@ -1,101 +1,114 @@
 <template>
-  <div>
-    <header>
-      <Container narrower>
-        <h1>Our clients</h1>
-        <p class="paragraph-large">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi ad ab tempore quisquam officia nesciunt quasi explicabo, aspernatur nemo facere neque repellat exercitationem aperiam id necessitatibus maxime, harum aliquam suscipit!
-        </p>
-      </Container>
-    </header>
-    <div class="clients">
-      <template v-for="(client, index) in clients">
-        <Card :key="client.name" :narrow="index % 2 !== 0" :right="index % 2 !== 0">
-          <template #image>
-            <div class="background">
-              <img :src="client.background" alt="">
-              <div class="logo">
-                <img :src="client.logo" alt="">
-              </div>
+    <div class="clients container">
+        <header>
+            <div class="row">
+                <h1 class="column-4 clients__heading">{{ content.heading }}</h1>
             </div>
-          </template>
-          <template #body>
-            <p class="paragraph-small">
-              Client
-            </p>
+            <div class="row">
+                <p class="column-2 paragraph-large">
+                    {{ content.ingress }}
+                </p>
+            </div>
+        </header>
+        <section class="clients-list">
+            <h2 class="sr-only">Clients</h2>
+            <div
+                v-for="(client, index) in content.clients"
+                :key="client.name"
+                class="row clients-list__client"
+            >
+                <div :class="index % 2 === 0 ? 'column' : 'column-2'">
+                    <Card :right="index % 2 !== 0">
+                        <template #image>
+                            <div class="background">
+                                <NuxtImg
+                                    :src="client.backgroundPath"
+                                    alt=""
+                                    format="webp"
+                                />
+                                <div class="logo">
+                                    <NuxtImg
+                                        :src="client.logoPath"
+                                        :alt="client.name + ' logo'"
+                                        format="webp"
+                                    />
+                                </div>
+                            </div>
+                        </template>
+                        <template #body>
+                            <div class="vertical-align-center">
+                                <small style="display: block">Client</small>
 
-            <h3>{{ client.name }}</h3>
-            <p>{{ client.description }}</p>
-            <a :href="client.link">
-              <Button>Visit {{ client.name }}</Button>
-            </a>
-          </template>
-        </Card>
-      </template>
+                                <span class="h3">{{ client.name }}</span>
+
+                                <p>{{ client.text }}</p>
+
+                                <a :href="client.link">
+                                    <Button @click="modal = true">
+                                        Visit {{ client.name }}
+                                    </Button>
+                                </a>
+                            </div>
+                        </template>
+                    </Card>
+                </div>
+            </div>
+        </section>
     </div>
-  </div>
 </template>
 
 <script>
+import { pages } from '~/static/content.json'
 export default {
-  name: 'Clients',
-  data () {
-    return {
-      clients: [
-        {
-          name: 'Vipps',
-          description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
-          link: 'http://vipps.no',
-          background: require('~/assets/images/client-bg-wide.svg'),
-          logo: require('~/assets/images/vipps.svg')
-        },
-        {
-          name: 'Fiskeridirektoratet',
-          description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
-          link: 'http://fdir.no',
-          background: require('~/assets/images/client-bg-narrow.svg'),
-          logo: require('~/assets/images/fdir.svg')
-        },
-        {
-          name: 'Fjordtours',
-          description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
-          link: 'http://fjordtours.no',
-          background: require('~/assets/images/client-bg-wide-2.svg'),
-          logo: require('~/assets/images/fjordtours.svg')
-        },
-        {
-          name: 'TV 2',
-          description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
-          link: 'http://tv2.no',
-          background: require('~/assets/images/client-bg-narrow-2.svg'),
-          logo: require('~/assets/images/tv2.svg')
+    name: 'Clients',
+    head() {
+        return {
+            title: this.content.metaTitle,
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: this.content.metaDescription
+                }
+            ]
         }
-      ]
+    },
+    data() {
+        return {
+            content: pages.clients
+        }
     }
-  }
 }
 </script>
 
 <style lang="scss" scoped>
-@import '~/assets/css/_variables.scss';
-
-  header {
-    h1 {
-      margin: 1em;
+.clients {
+    &__heading {
+        margin-top: base(10);
+        margin-bottom: base(5);
+        @media screen and(max-width: map-get($breakpoints, md)) {
+            margin-top: base(5);
+        }
     }
-  }
+}
 
-  .background {
+.clients-list {
+    &__client {
+        margin-bottom: base(7.5);
+    }
+
+    h3 {
+        margin-bottom: base(1.5);
+    }
+}
+.background {
     position: relative;
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-  .logo {
+}
+
+.logo {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
-  }
+    transform: translate(-50%, -50%);
+}
 </style>

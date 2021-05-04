@@ -10,13 +10,12 @@ module.exports = {
     extends: [
         '@nuxtjs',
         'plugin:nuxt/recommended',
-        'plugin:vue/vue3-recommended'
+        'plugin:vue/vue3-recommended',
+        'plugin:prettier/recommended'
     ],
-    plugins: [],
+    plugins: ['prettier'],
     // add your custom rules here
     rules: {
-        indent: ['error', 4],
-        'vue/html-indent': ['error', 4],
-        'space-before-function-paren': ['error', 'never']
+        'prettier/prettier': 'error'
     }
 }

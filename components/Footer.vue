@@ -1,66 +1,120 @@
 <template>
-  <footer>
-    <Container narrow>
-      <div class="footer__top">
-        <h3 class="color-secondary">
-          Want to collaborate with us?
-        </h3>
-        <Button>Contact us</Button>
-      </div>
-    </Container>
-    <Container>
-      <div class="footer__bottom">
-        <div class="footer__grid">
-          <address>
-            <div>Lars Hilles gate 30</div>
-            <div>5008 Bergen</div>
-            <div>hei@savvy.no</div>
-          </address>
-          <div class="social">
-            <div>LinkedIn</div>
-            <div>Instagram</div>
-            <div>Facebook</div>
-          </div>
-          <div class="links">
-            <div>Clients</div>
-            <div>Agency</div>
-            <div>Contact</div>
-          </div>
+    <footer class="container">
+        <div class="row">
+            <div class="column footer__cta">
+                <h3
+                    v-if="$route.name === 'agency' || $route.name === 'contact'"
+                    class="color-secondary"
+                >
+                    Want to be part of our team?
+                </h3>
+                <h3 v-else class="color-secondary">
+                    Want to collaborate with us?
+                </h3>
+
+                <Button
+                    v-if="$route.name === 'agency'"
+                    @click="openUploadCVModal"
+                >
+                    Send your CV
+                </Button>
+                <Button v-else @click="openSendMessageModal">Contact us</Button>
+            </div>
         </div>
-        <div class="copyright">
-          &#169;{{ new Date().getFullYear() }} All Rights Reserved
+        <div class="row">
+            <div class="column footer__bottom">
+                <div class="footer__grid">
+                    <address>
+                        <div>{{ footer.address }}</div>
+                        <div>{{ footer.postal }}</div>
+                        <div>{{ footer.email }}</div>
+                    </address>
+                    <div class="social">
+                        <div>LinkedIn</div>
+                        <div>Instagram</div>
+                        <div>Facebook</div>
+                    </div>
+                    <nav class="links">
+                        <NuxtLink to="/clients" class="color-secondary">
+                            Clients
+                        </NuxtLink>
+                        <NuxtLink to="/agency" class="color-secondary">
+                            Agency
+                        </NuxtLink>
+                        <NuxtLink to="/contact" class="color-secondary">
+                            Contact
+                        </NuxtLink>
+                    </nav>
+                </div>
+                <div class="copyright">
+                    &#169;{{ new Date().getFullYear() }} All Rights Reserved
+                </div>
+            </div>
         </div>
-      </div>
-    </Container>
-  </footer>
+    </footer>
 </template>
 
 <script>
+import { globals } from '~/static/content.json'
+import FormModal from '~/components/modal/FormModal'
+import SendMessageForm from '~/components/forms/SendMessageForm'
+import UploadCVForm from '~/components/forms/UploadCVForm'
 export default {
-  name: 'Footer'
+    name: 'Footer',
+    data() {
+        return {
+            footer: globals.footer
+        }
+    },
+    methods: {
+        openSendMessageModal() {
+            this.$vfm.show({
+                component: FormModal,
+                bind: {
+                    color: 'secondary-dark'
+                },
+                slots: {
+                    default: {
+                        component: SendMessageForm
+                    }
+                }
+            })
+        },
+        openUploadCVModal() {
+            this.$vfm.show({
+                component: FormModal,
+                bind: {
+                    color: 'primary-dark'
+                },
+                slots: {
+                    default: {
+                        component: UploadCVForm
+                    }
+                }
+            })
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
-@import '~/assets/css/_mixins.scss';
-@import '~/assets/css/_variables.scss';
 footer {
     color: $color-secondary;
     position: relative;
 }
 
-.footer__top {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    @include breakpoint-down-md {
-      padding-bottom: 50px;
+.footer__cta {
+    margin-bottom: base(7.5);
+    @media screen and (max-width: map-get($breakpoints, md )) {
+        margin-bottom: base(3);
     }
 }
+
 .footer__bottom {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: end;
-    padding-bottom: 50px;
+    padding-bottom: base(2.5);
 }
 
 .footer__grid {
@@ -68,16 +122,26 @@ footer {
     grid-template-columns: repeat(3, 1fr);
 }
 
-@include breakpoint-down-md {
-  .footer__bottom {
-    grid-template-rows: 1fr auto;
-    grid-template-columns: 1fr;
-    row-gap: 30px;
-  }
-  .footer__grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 30px;
-  }
+.links,
+.social,
+address {
+    > * {
+        display: block;
+        padding-top: base(0.6);
+        padding-bottom: base(0.6);
+    }
+}
+
+@media screen and (max-width: map-get($breakpoints, md )) {
+    .footer__bottom {
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 1fr;
+        row-gap: base(1.5);
+    }
+    .footer__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: base(3);
+    }
 }
 </style>
