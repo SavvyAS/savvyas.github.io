@@ -219,7 +219,7 @@ export default {
             return pages.home.competence
         },
         competenceString() {
-            return this.competence.join(' // ')
+            return this.competence.map((x) => x + ' // ').join('')
         }
     }
 }
@@ -246,7 +246,7 @@ export default {
     height: 100%;
     font-size: base(3.6);
     color: $color-secondary-dark;
-    animation: marquee 15s linear infinite;
+    animation: marquee 25s linear infinite;
     padding: 0 10px;
 }
 
@@ -269,12 +269,12 @@ export default {
 
 .marquee--slow {
     .marquee__content {
-        animation-duration: 20s !important;
+        animation-duration: 30s !important;
     }
 }
 .marquee--fast {
     .marquee__content {
-        animation-duration: 8s !important;
+        animation-duration: 20s !important;
     }
 }
 @keyframes marquee {
