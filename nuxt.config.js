@@ -49,7 +49,8 @@ export default {
     },
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
-        transpile: ['vue-final-modal']
+        transpile: ['vue-final-modal'],
+        vendor: ['vue-marquee-text-component']
     },
     image: {
         // nuxt-img Options
