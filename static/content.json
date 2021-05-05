@@ -27,7 +27,22 @@
                     "name": "TV 2"
                 }
             ],
-            "competence": ["Utvikling", "Arkitektur", "Smidig", "Mobil", "Web", "Frontend", "Backend", "Full stack", "Tech Lead", "Java", ".NET", "Javascript", "React", "Angular"]
+            "competence": [
+                "Utvikling",
+                "Arkitektur",
+                "Smidig",
+                "Mobil",
+                "Web",
+                "Frontend",
+                "Backend",
+                "Full stack",
+                "Tech Lead",
+                "Java",
+                ".NET",
+                "Javascript",
+                "React",
+                "Angular"
+            ]
         },
         "clients": {
             "metaTitle": "Savvy | Clients",

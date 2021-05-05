@@ -55,7 +55,7 @@
                     />
                 </template>
                 <template #default>
-                    <div class="overflow-text-container">
+                    <!-- <div class="overflow-text-container">
                         <span
                             v-for="i in 3"
                             :key="'competence' + i"
@@ -66,24 +66,89 @@
                                 <span class="double-slash"></span>
                             </span>
                         </span>
+                    </div> -->
+                    <!-- <div class="relative">
+                        <div class="marquee-wrapper">
+                            <div class="marquee">
+                                <div>
+                                    <span>
+                                        <span>competence</span>
+                                        <span>competence</span>
+                                        <span>competence</span>
+                                        <span>competence</span>
+                                        <span>competence</span>
+                                    </span>
+                                    <span>
+                                        <span>competence</span>
+                                        <span>competence</span>
+                                        <span>competence</span>
+                                        <span>competence</span>
+                                        <span>competence</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div style="height: 130px">
+                        <div class="relative">
+                            <div class="marquee marquee--slow">
+                                <div class="marquee__track">
+                                    <span class="marquee__content">{{
+                                        competenceString
+                                    }}</span>
+                                    <span class="marquee__content">{{
+                                        competenceString
+                                    }}</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div style="height: 130px">
+                        <div class="relative">
+                            <div
+                                class="marquee marquee--reverse marquee--primary"
+                            >
+                                <div class="marquee__track">
+                                    <span class="marquee__content">{{
+                                        competenceString
+                                    }}</span>
+                                    <span class="marquee__content">{{
+                                        competenceString
+                                    }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 130px">
+                        <div class="relative">
+                            <div
+                                class="marquee marquee--fast marquee marquee--primary-dark"
+                            >
+                                <div class="marquee__track">
+                                    <span class="marquee__content">{{
+                                        competenceString
+                                    }}</span>
+                                    <span class="marquee__content">{{
+                                        competenceString
+                                    }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="relative">
+                        <div class="marquee-wrapper">
+                            <div class="marquee marquee--reverse">
+                                <div>
+                                    <span>{{ competenceString }}</span>
+                                    <span>{{ competenceString }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
                 </template>
             </HalfImageLayout>
         </section>
         <section>
-            <!-- <div class="marquee">
-                <span v-for="comp in competence" :key="comp">
-                    {{ comp }}
-                    <span class="double-slash"></span>
-                </span>
-            </div>
-            <div class="marquee-2">
-                <span v-for="comp in competence" :key="comp">
-                    {{ comp }}
-                    <span class="double-slash"></span>
-                </span>
-            </div>
-            <h1 class="color-primary">Test lol haha lol test</h1> -->
             <h2 class="sr-only">Clients</h2>
             <HorizontalScrollContainer>
                 <div
@@ -152,6 +217,9 @@ export default {
         },
         competence() {
             return pages.home.competence
+        },
+        competenceString() {
+            return this.competence.join(' // ')
         }
     }
 }
@@ -159,30 +227,73 @@ export default {
 
 <style lang="scss" scoped>
 .marquee {
-    white-space: nowrap;
-    animation: test 60s linear -20s infinite;
-}
-.marquee-2 {
-    white-space: nowrap;
-    animation: test2 60s linear 10s infinite;
+    height: 100px;
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-@keyframes test {
-    from {
-        transform: translate3d(100vw, 0, 0);
-    }
-    to {
-        transform: translate3d(100vw, 0, 0) translate3d(-200%, 0, 0);
+.marquee__track {
+    height: 100%;
+    width: max-content;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.marquee__content {
+    width: max-content;
+    height: 100%;
+    font-size: base(3.6);
+    color: $color-secondary-dark;
+    animation: marquee 15s linear infinite;
+    padding: 0 10px;
+}
+
+.marquee--reverse {
+    .marquee__content {
+        animation: marqueeboo 15s linear infinite;
     }
 }
-@keyframes test2 {
-    from {
-        transform: translate3d(100vw, 0, 0) translate3d(-100%, 0, 0);
-    }
-    to {
-        transform: translate3d(100vw, 0, 0) translate3d(-300%, 0, 0);
+
+.marquee--primary {
+    .marquee__content {
+        color: $color-primary;
     }
 }
+.marquee--primary-dark {
+    .marquee__content {
+        color: $color-primary-dark;
+    }
+}
+
+.marquee--slow {
+    .marquee__content {
+        animation-duration: 20s !important;
+    }
+}
+.marquee--fast {
+    .marquee__content {
+        animation-duration: 8s !important;
+    }
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes marqueeboo {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
 .graffiti-2 {
     max-width: base(19);
     margin: auto;
