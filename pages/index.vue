@@ -151,9 +151,7 @@ export default {
             return pages.home
         },
         competence() {
-            return [...new Array(15).fill()].map(
-                (_, i) => `competence ${i + 1}`
-            )
+            return pages.home.competence
         }
     }
 }
