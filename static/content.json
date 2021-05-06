@@ -140,8 +140,8 @@
                 {
                     "imagePath": "/images/people/people-placeholder-wide.svg",
                     "name": "Håkon Trandal",
-                    "title": "Title",
-                    "about": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "title": "Consultant",
+                    "about": "Håkon is a full stack developer with 8 years of .Net experience. He has worked on everything from small websites to computer games and large enterprise systems. Håkon works well in teams and is well respected for his ability to explain concepts.",
                     "email": "hakon.trandal@savvy.no"
                 }
             ]
