@@ -126,9 +126,9 @@
                 {
                     "imagePath": "/images/people/people-placeholder-wide.svg",
                     "name": "Erlend Rekve",
-                    "title": "Title",
-                    "about": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
-                    "email": "erlend.rekve@savvy.no"
+                    "title": "Consultant",
+                    "about": "Erlend is a full stack developer with a master’s degree in computer science. He has several years of experience working with complex systems primarily on the .net platform. He is known by his colleges for being a thorough and innovative developer.  ",
+                    "email": "erlend@savvy.no"
                 },
                 {
                     "imagePath": "/images/people/people-placeholder.svg",
