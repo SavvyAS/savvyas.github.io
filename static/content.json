@@ -61,15 +61,15 @@
                     "logoPath": "/images/fdir.svg",
                     "backgroundPath": "/images/client-background-2.svg",
                     "name": "Fiskeridirektoratet",
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
-                    "websiteUrl": "#"
+                    "text": "The Directorate of Fisheries is a branch of the Norwegian government that is responsible for managing Norway's marine resources. Savvy has been a part of a team that's been developing a new system for managing fishing quotas.",
+                    "websiteUrl": "https://fiskeridir.no"
                 },
                 {
                     "logoPath": "/images/fjordtours.svg",
                     "backgroundPath": "/images/client-background-2-wide.svg",
                     "name": "Fjord Tours",
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
-                    "websiteUrl": "#"
+                    "text": "Fjord Tours, founded in 1982, offers package tours, activities and hotels throughout Norway on both the Norwegian and international market. Several of our employees have previous experience working for Fjord Tours and we are proud to announce that Savvy will be working with them in the near future.",
+                    "websiteUrl": "https://fjordtours.com"
                 },
                 {
                     "logoPath": "/images/tv2.svg",
@@ -85,7 +85,7 @@
             "metaDescription": "This is our agency!",
             "heading": "We are savvy people",
             "ingress": "Savvy was founded by experienced consultants from the software industry in an attempt at creating a company that empowers its employees.",
-            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+            "text": "",
             "guilty": {
                 "heading": "Savvy & guilty",
                 "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
@@ -127,7 +127,7 @@
                     "imagePath": "/images/people/people-placeholder-wide.svg",
                     "name": "Erlend Rekve",
                     "title": "Consultant",
-                    "about": "Erlend is a full stack developer with a master’s degree in computer science. He has several years of experience working with complex systems primarily on the .net platform. He is known by his colleges for being a thorough and innovative developer.  ",
+                    "about": "Erlend is a full stack developer with a master’s degree in computer science. He has several years of experience working with complex systems primarily on the .NET platform. He is known by his colleagues for being a thorough and innovative developer.",
                     "email": "erlend@savvy.no"
                 },
                 {
@@ -141,7 +141,7 @@
                     "imagePath": "/images/people/people-placeholder-wide.svg",
                     "name": "Håkon Trandal",
                     "title": "Consultant",
-                    "about": "Håkon is a full stack developer with 8 years of .Net experience. He has worked on everything from small websites to computer games and large enterprise systems. Håkon works well in teams and is well respected for his ability to explain concepts.",
+                    "about": "Håkon is a full stack developer with 8 years of .NET experience. He has worked on everything from small websites to computer games and large enterprise systems. Håkon works well in teams and is well respected for his ability to explain concepts.",
                     "email": "hakon.trandal@savvy.no"
                 }
             ]
