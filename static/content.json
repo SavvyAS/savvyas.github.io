@@ -54,7 +54,7 @@
                     "logoPath": "/images/vipps.svg",
                     "backgroundPath": "/images/client-background-1-wide.svg",
                     "name": "Vipps",
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "text": "Savvy has an important role in the next generation BankID solution. We are a part of the team that develops an improved user experience for Vipps and BankID.",
                     "websiteUrl": "#"
                 },
                 {
@@ -119,9 +119,9 @@
                 {
                     "imagePath": "/images/people/joachim.png",
                     "name": "Joachim Carlsen",
-                    "title": "Title",
-                    "about": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
-                    "email": "joachim.carlsen@savvy.no"
+                    "title": "Consultant",
+                    "about": "Joachim is a developer with multiple years of experiece working with well known brands such as Vipps, TV2 and Altibox. During his career Joachim has worked with multiple technologies and has built solid competence on the Java platform and as an iOS developer.",
+                    "email": "joachim@savvy.no"
                 },
                 {
                     "imagePath": "/images/people/people-placeholder-wide.svg",
