@@ -3,7 +3,7 @@
         "home": {
             "metaTitle": "Savvy | Home",
             "metaDescription": "Welcome to savvy!",
-            "heading": "Allow us to introduce ourselves. We are Savvy.",
+            "heading": "We are Savvy.",
             "ingress": "Savvy is a new consulting firm with a clear vision. We have built this company from the ground up to make sure that our consultants are competent, ambitious, and happy. We do not believe in bread and circus, we believe in transparency, equality, and adventure.",
             "clients": [
                 {
@@ -85,7 +85,7 @@
             "metaDescription": "This is our agency!",
             "heading": "We are savvy people",
             "ingress": "Savvy was founded by experienced consultants from the software industry in an attempt at creating a company that empowers its employees.",
-            "text": "",
+            "text": "We are here to generate value, not lines of code. We help our clients increase the quality of their products and reduce time to market.",
             "guilty": {
                 "heading": "Savvy & guilty",
                 "text": "Guilty is Savvy's sister company. Guilty has been growing steadily for many years, doing design and software projects in house.",
@@ -124,21 +124,21 @@
                     "email": "joachim@savvy.no"
                 },
                 {
-                    "imagePath": "/images/people/people-placeholder-wide.svg",
+                    "imagePath": "/images/people/erlend.png",
                     "name": "Erlend Rekve",
                     "title": "Consultant",
                     "about": "Erlend is a full stack developer with a master’s degree in computer science. He has several years of experience working with complex systems primarily on the .NET platform. He is known by his colleagues for being a thorough and innovative developer.",
                     "email": "erlend@savvy.no"
                 },
                 {
-                    "imagePath": "/images/people/people-placeholder.svg",
+                    "imagePath": "/images/people/abdullah.png",
                     "name": "Abdullah Shaheen",
                     "title": "Title",
-                    "about": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "about": "Abdullah is a developer with experience from working with large and complex systems. He has experience from working on the .NET platform as well as several different frontend technologies.",
                     "email": "abdullah.shaheen@savvy.no"
                 },
                 {
-                    "imagePath": "/images/people/people-placeholder-wide.svg",
+                    "imagePath": "/images/people/trandal.png",
                     "name": "Håkon Trandal",
                     "title": "Consultant",
                     "about": "Håkon is a full stack developer with 8 years of .NET experience. He has worked on everything from small websites to computer games and large enterprise systems. Håkon works well in teams and is well respected for his ability to explain concepts.",
