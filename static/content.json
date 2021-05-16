@@ -20,11 +20,6 @@
                     "logoPath": "/images/fjordtours.svg",
                     "backgroundPath": "/images/client-background-3.svg",
                     "name": "Fjord Tours"
-                },
-                {
-                    "logoPath": "/images/tv2.svg",
-                    "backgroundPath": "/images/client-background-4.svg",
-                    "name": "TV 2"
                 }
             ],
             "competence": [
@@ -157,7 +152,7 @@
             "address": "Lars Hilles gate 30",
             "postal": "5008 Bergen",
             "email": "hei@savvy.no",
-            "telephone": "+47 00 00 00 00"
+            "telephone": "+47 95 28 00 59"
         }
     }
 }

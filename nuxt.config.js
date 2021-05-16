@@ -15,6 +15,9 @@ export default {
                 content: 'width=device-width, initial-scale=1'
             },
             { hid: 'description', name: 'description', content: '' }
+        ],
+        link: [ 
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
         ]
     },
 
@@ -41,8 +44,10 @@ export default {
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: ['@nuxtjs/style-resources'],
-
+    modules: [
+        '@nuxtjs/style-resources', 
+        '@nuxtjs/google-analytics'
+    ],
     // style resources
     styleResources: {
         scss: ['~/assets/css/_variables.scss', '~/assets/css/_mixins.scss']
@@ -61,5 +66,8 @@ export default {
             lg: 992,
             xl: 1200
         }
+    },
+    googleAnalytics: {
+        id: 'GTM-NCL695S'
     }
 }
