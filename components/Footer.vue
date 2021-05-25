@@ -29,11 +29,6 @@
                         <div>{{ footer.postal }}</div>
                         <div>{{ footer.email }}</div>
                     </address>
-                    <div class="social">
-                        <div>LinkedIn</div>
-                        <div>Instagram</div>
-                        <div>Facebook</div>
-                    </div>
                     <nav class="links">
                         <NuxtLink to="/clients" class="color-secondary">
                             Clients
