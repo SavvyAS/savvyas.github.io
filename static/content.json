@@ -49,8 +49,8 @@
                     "logoPath": "/images/vipps.svg",
                     "backgroundPath": "/images/client-background-1-wide.svg",
                     "name": "Vipps",
-                    "text": "Savvy has an important role in the next generation BankID solution. We are a part of the team that develops an improved user experience for Vipps and BankID.",
-                    "websiteUrl": "#"
+                    "text": "BankID is Norways most preferred solution for ID services, trusted by public services, banks, insurance, among many others. Savvy is contributing to the next generation of the BankID solutions.",
+                    "websiteUrl": "https://bankid.no"
                 },
                 {
                     "logoPath": "/images/fdir.svg",
@@ -65,13 +65,6 @@
                     "name": "Fjord Tours",
                     "text": "Fjord Tours, founded in 1982, offers package tours, activities and hotels throughout Norway on both the Norwegian and international market. Several of our employees have previous experience working for Fjord Tours and we are proud to announce that Savvy will be working with them in the near future.",
                     "websiteUrl": "https://fjordtours.com"
-                },
-                {
-                    "logoPath": "/images/tv2.svg",
-                    "backgroundPath": "/images/client-background-4.svg",
-                    "name": "TV 2",
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
-                    "websiteUrl": "#"
                 }
             ]
         },
