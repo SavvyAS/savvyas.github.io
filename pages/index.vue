@@ -1,9 +1,11 @@
+<!-- eslint-disable vue/no-v-for-template-key-on-child -->
 <template>
     <div>
         <header>
             <HalfImageLayout>
                 <template #image>
                     <NuxtImg
+                        ref="image"
                         src="/images/header-image-1.png"
                         format="webp"
                         width="628"
@@ -16,7 +18,10 @@
                     <div class="row">
                         <div class="column-2">
                             <div class="header-text">
-                                <h1>{{ content.heading }}</h1>
+                                <h1 style="display: none; opacity: 0">
+                                    {{ content.heading }}
+                                </h1>
+                                <AnimatedHeading />
                                 <NuxtLink to="/agency">
                                     <Button tabindex="-1">The agency</Button>
                                 </NuxtLink>
@@ -55,86 +60,57 @@
                     />
                 </template>
                 <template #default>
-                    <!-- <div class="overflow-text-container">
-                        <span
-                            v-for="i in 3"
-                            :key="'competence' + i"
-                            class="overflow-text-item"
-                        >
-                            <span v-for="comp in competence" :key="comp">
-                                {{ comp }}
-                                <span class="double-slash"></span>
-                            </span>
-                        </span>
-                    </div> -->
-                    <!-- <div class="relative">
-                        <div class="marquee-wrapper">
-                            <div class="marquee">
-                                <div>
-                                    <span>
-                                        <span>competence</span>
-                                        <span>competence</span>
-                                        <span>competence</span>
-                                        <span>competence</span>
-                                        <span>competence</span>
-                                    </span>
-                                    <span>
-                                        <span>competence</span>
-                                        <span>competence</span>
-                                        <span>competence</span>
-                                        <span>competence</span>
-                                        <span>competence</span>
-                                    </span>
+                    <div
+                        style="display: grid; align-content: end; height: 100%"
+                    >
+                        <div style="height: 130px">
+                            <div class="relative">
+                                <div class="marquee marquee--slow">
+                                    <div class="marquee__track">
+                                        <span class="marquee__content">{{
+                                            competenceString
+                                        }}</span>
+                                        <span class="marquee__content">{{
+                                            competenceString
+                                        }}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div> -->
-                    <div style="height: 130px">
-                        <div class="relative">
-                            <div class="marquee marquee--slow">
-                                <div class="marquee__track">
-                                    <span class="marquee__content">{{
-                                        competenceString
-                                    }}</span>
-                                    <span class="marquee__content">{{
-                                        competenceString
-                                    }}</span>
+                        <div style="height: 130px">
+                            <div class="relative">
+                                <div
+                                    class="marquee marquee--reverse marquee--primary"
+                                >
+                                    <div class="marquee__track">
+                                        <span class="marquee__content">{{
+                                            competenceString
+                                        }}</span>
+                                        <span class="marquee__content">{{
+                                            competenceString
+                                        }}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div style="height: 130px">
-                        <div class="relative">
-                            <div
-                                class="marquee marquee--reverse marquee--primary"
-                            >
-                                <div class="marquee__track">
-                                    <span class="marquee__content">{{
-                                        competenceString
-                                    }}</span>
-                                    <span class="marquee__content">{{
-                                        competenceString
-                                    }}</span>
+                        <div style="height: 130px">
+                            <div class="relative">
+                                <div
+                                    class="marquee marquee--fast marquee marquee--primary-dark"
+                                >
+                                    <div class="marquee__track">
+                                        <span class="marquee__content">{{
+                                            competenceString
+                                        }}</span>
+                                        <span class="marquee__content">{{
+                                            competenceString
+                                        }}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div style="height: 130px">
-                        <div class="relative">
-                            <div
-                                class="marquee marquee--fast marquee marquee--primary-dark"
-                            >
-                                <div class="marquee__track">
-                                    <span class="marquee__content">{{
-                                        competenceString
-                                    }}</span>
-                                    <span class="marquee__content">{{
-                                        competenceString
-                                    }}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                     <!-- <div class="relative">
                         <div class="marquee-wrapper">
                             <div class="marquee marquee--reverse">
@@ -199,6 +175,9 @@ export default {
     components: {
         HalfImageLayout
     },
+    data() {
+        return {}
+    },
     head() {
         return {
             title: this.content.metaTitle,
@@ -221,7 +200,8 @@ export default {
         competenceString() {
             return this.competence.map((x) => x + ' // ').join('')
         }
-    }
+    },
+    mounted() {}
 }
 </script>
 
