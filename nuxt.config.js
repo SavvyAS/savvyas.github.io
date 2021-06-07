@@ -25,7 +25,7 @@ export default {
                 hid: 'og:description',
                 name: 'og:description',
                 content:
-                    'Vi er Savvy, et konsulentselskap som ønsker å samle de triveligste og flinkeste teknologene, hvor fokuset skal være på innovasjon og de ansatte.'
+                    'Vi er Savvy, et konsulentselskap som ønsker å samle de triveligste og flinkeste teknologene, hvor fokuset skal være på de ansatte og innovasjon.'
             },
             {
                 hid: 'og:image',
