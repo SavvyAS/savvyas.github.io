@@ -75,8 +75,8 @@ export default {
     gap: 10px;
     cursor: pointer;
 
-    &:focus {
-        outline: 2px solid $color-secondary;
+    &:focus-visible {
+        outline: 1px solid $color-secondary;
         outline-offset: base(0.5);
     }
     &__icon {

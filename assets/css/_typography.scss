@@ -92,8 +92,8 @@ p {
 a {
     text-decoration: none;
     display: inline-block;
-    &:focus {
-        outline: 2px solid white;
+    &:focus-visible {
+        outline: 1px solid white;
         outline-offset: base(0.5);
     }
 

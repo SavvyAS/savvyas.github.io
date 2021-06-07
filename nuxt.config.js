@@ -14,11 +14,31 @@ export default {
                 name: 'viewport',
                 content: 'width=device-width, initial-scale=1'
             },
-            { hid: 'description', name: 'description', content: '' }
+            { hid: 'description', name: 'description', content: '' },
+            {
+                hid: 'og:title',
+                name: 'og:title',
+                content:
+                    'Savvy | Konsulentselskap med fokus på folk og nyskapning'
+            },
+            {
+                hid: 'og:description',
+                name: 'og:description',
+                content:
+                    'Vi er Savvy, et konsulentselskap som ønsker å samle de triveligste og flinkeste teknologene, hvor fokuset skal være på innovasjon og de ansatte.'
+            },
+            {
+                hid: 'og:image',
+                name: 'og:image',
+                content: '/images/savvy_og.png'
+            },
+            {
+                hid: 'og:image:alt',
+                name: 'og:image:alt',
+                content: 'Savvy'
+            }
         ],
-        link: [ 
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
-        ]
+        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }]
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
@@ -45,8 +65,9 @@ export default {
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
-        '@nuxtjs/style-resources', 
-        '@nuxtjs/google-analytics'
+        '@nuxtjs/style-resources',
+        '@nuxtjs/google-analytics',
+        '@nuxtjs/gtm'
     ],
     // style resources
     styleResources: {
@@ -68,6 +89,9 @@ export default {
         }
     },
     googleAnalytics: {
+        id: 'GTM-NCL695S'
+    },
+    gtm: {
         id: 'GTM-NCL695S'
     }
 }
