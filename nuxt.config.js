@@ -6,7 +6,8 @@ export default {
     head: {
         title: 'savvy',
         htmlAttrs: {
-            lang: 'en'
+            lang: 'en',
+            prefix: 'og: http://ogp.me/ns#'
         },
         meta: [
             { charset: 'utf-8' },
@@ -14,27 +15,42 @@ export default {
                 name: 'viewport',
                 content: 'width=device-width, initial-scale=1'
             },
-            { hid: 'description', name: 'description', content: '' },
             {
                 hid: 'og:title',
                 name: 'og:title',
+                property: 'og:title',
                 content:
                     'Savvy | Konsulentselskap med fokus på folk og nyskapning'
             },
             {
-                hid: 'og:description',
-                name: 'og:description',
-                content:
-                    'Vi er Savvy, et konsulentselskap som ønsker å samle de triveligste og flinkeste teknologene, hvor fokuset skal være på de ansatte og innovasjon.'
+                hid: 'og:type',
+                name: 'og:type',
+                property: 'og:type',
+                content: 'website'
+            },
+            {
+                hid: 'og:url',
+                name: 'og:url',
+                property: 'og:url',
+                content: 'https://savvy.no'
             },
             {
                 hid: 'og:image',
                 name: 'og:image',
-                content: '/images/savvy_og.png'
+                property: 'og:image',
+                content: 'https://savvy.no' + '/images/savvy_og.png'
+            },
+            {
+                hid: 'og:description',
+                name: 'og:description',
+                property: 'og:description',
+                content:
+                    'Vi er Savvy, et konsulentselskap som ønsker å samle de triveligste og flinkeste teknologene, hvor fokuset skal være på de ansatte og innovasjon.'
             },
             {
                 hid: 'og:image:alt',
                 name: 'og:image:alt',
+                property: 'og:image:alt',
                 content: 'Savvy'
             }
         ],
