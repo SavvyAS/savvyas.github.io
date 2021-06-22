@@ -1,10 +1,11 @@
 <template>
-    <input v-bind="$attrs" />
+    <input v-bind="$attrs" @input="$emit('input', $event.target.value)" />
 </template>
 
 <script>
 export default {
-    name: 'Input'
+    name: 'Input',
+    emits: ['input']
 }
 </script>
 

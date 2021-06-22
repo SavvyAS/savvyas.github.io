@@ -12,6 +12,7 @@
                             format="webp"
                             width="628"
                             height="790"
+                            quality="100"
                         />
                         <p class="paragraph-large grid-layout__ingress">
                             {{ content.text }}
@@ -37,6 +38,7 @@
                             format="webp"
                             width="379"
                             height="431"
+                            quality="100"
                             alt=""
                         />
                     </div>
@@ -50,6 +52,15 @@
 import { pages, globals } from '~/static/content.json'
 export default {
     name: 'Contact',
+    data() {
+        return {
+            content: pages.contact,
+            address: globals.footer.address,
+            email: globals.footer.email,
+            postal: globals.footer.postal,
+            telephone: globals.footer.telephone
+        }
+    },
     head() {
         return {
             title: this.content.metaTitle,
@@ -60,15 +71,6 @@ export default {
                     content: this.content.metaDescription
                 }
             ]
-        }
-    },
-    data() {
-        return {
-            content: pages.contact,
-            address: globals.footer.address,
-            email: globals.footer.email,
-            postal: globals.footer.postal,
-            telephone: globals.footer.telephone
         }
     }
 }

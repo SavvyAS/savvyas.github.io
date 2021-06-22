@@ -27,7 +27,11 @@
                     <address>
                         <div>{{ footer.address }}</div>
                         <div>{{ footer.postal }}</div>
-                        <div>{{ footer.email }}</div>
+                        <div>
+                            <a class="color-white" href="mailto:hei@savvy.no">
+                                {{ footer.email }}
+                            </a>
+                        </div>
                     </address>
                     <nav class="links">
                         <NuxtLink to="/clients" class="color-secondary">
@@ -98,6 +102,12 @@ footer {
     position: relative;
 }
 
+a {
+    color: white;
+    &:hover {
+        color: white;
+    }
+}
 .footer__cta {
     margin-bottom: base(7.5);
     @media screen and (max-width: map-get($breakpoints, md )) {

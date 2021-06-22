@@ -16,6 +16,7 @@
             <NuxtImg
                 class="column graffiti-top"
                 src="/images/graffiti.svg"
+                quality="100"
                 format="webp"
                 width="413"
                 height="408"
@@ -36,6 +37,7 @@
                                 src="/images/purple-room.png"
                                 format="webp"
                                 alt=""
+                                quality="100"
                                 width="790"
                                 height="628"
                             />
@@ -102,6 +104,7 @@
                                     :src="person.imagePath"
                                     alt=""
                                     format="webp"
+                                    quality="100"
                                     sizes="sm:400px md:100% lg:800px"
                                 />
                                 <div v-if="index === 1" class="graffiti">
@@ -109,6 +112,7 @@
                                         src="/images/graffiti_2.svg"
                                         format="webp"
                                         width="379"
+                                        quality="100"
                                         height="431"
                                         alt=""
                                     />
@@ -117,6 +121,7 @@
                                     <NuxtImg
                                         src="/images/graffiti.svg"
                                         format="webp"
+                                        quality="100"
                                         width="413"
                                         height="408"
                                         alt=""
@@ -148,7 +153,9 @@
                                     <NuxtImg
                                         src="/images/graffiti_2.svg"
                                         format="webp"
+                                        quality="100"
                                         width="379"
+                                        :style="{ position: 'relative' }"
                                         height="431"
                                         alt=""
                                     />
@@ -158,7 +165,9 @@
                                         src="/images/graffiti.svg"
                                         format="webp"
                                         width="413"
+                                        quality="100"
                                         height="408"
+                                        :style="{ position: 'relative' }"
                                         alt=""
                                     />
                                 </div>
@@ -178,6 +187,11 @@ import TextModal from '~/components/modal/TextModal'
 import { pages } from '~/static/content.json'
 export default {
     name: 'Agency',
+    data() {
+        return {
+            content: pages.agency
+        }
+    },
     head() {
         return {
             title: this.content.title,
@@ -188,11 +202,6 @@ export default {
                     content: this.content.metaDescription
                 }
             ]
-        }
-    },
-    data() {
-        return {
-            content: pages.agency
         }
     },
     methods: {
@@ -280,6 +289,7 @@ li {
     }
     .graffiti {
         position: absolute;
+        z-index: 1;
         width: 60%;
         bottom: 0;
         left: 0;

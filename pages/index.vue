@@ -10,6 +10,7 @@
                         format="webp"
                         width="628"
                         height="790"
+                        quality="100"
                         sizes="sm:300px lg:600px"
                         alt=""
                     />
@@ -33,6 +34,7 @@
                         src="/images/graffiti.svg"
                         format="webp"
                         width="413"
+                        quality="100"
                         height="408"
                         alt=""
                     />
@@ -110,17 +112,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- <div class="relative">
-                        <div class="marquee-wrapper">
-                            <div class="marquee marquee--reverse">
-                                <div>
-                                    <span>{{ competenceString }}</span>
-                                    <span>{{ competenceString }}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </template>
             </HalfImageLayout>
         </section>
@@ -138,6 +129,7 @@
                             class="client-card__background"
                             format="webp"
                             :src="client.backgroundPath"
+                            quality="100"
                             width="520"
                             height="660"
                             alt=""
@@ -159,6 +151,7 @@
                 class="graffiti-2"
                 src="/images/graffiti_2.svg"
                 format="webp"
+                quality="100"
                 width="379"
                 height="431"
                 alt=""

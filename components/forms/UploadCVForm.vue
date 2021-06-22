@@ -1,34 +1,40 @@
 <template>
-    <ThemedForm @submit="onSubmit" id="form" ref="form">
-        <Input placeholder="Your name *" name="Name" />
-        <Input placeholder="Phone" name="Telephone" />
-        <Input type="email" placeholder="Mail *" name="E-mail" />
-        <Input placeholder="Message *" name="Message" />
-        <FileInput name="File" />
+    <ThemedForm id="form" ref="form" @submit="onSubmit">
+        <Input v-model="name" placeholder="Your name *" name="Name" />
+        <Input v-model="telephone" placeholder="Phone" name="Telephone" />
+        <Input v-model="message" placeholder="Message *" name="Message" />
         <div style="display: grid; justify-items: end">
-            <Button
-                type="submit"
-                color="secondary"
-                button-type="arrow"
-                secondary
-            >
-                Send request
-            </Button>
+            <a :href="body">
+                <Button
+                    type="button"
+                    color="secondary"
+                    button-type="arrow"
+                    secondary
+                >
+                    Send
+                </Button>
+            </a>
         </div>
     </ThemedForm>
 </template>
 
 <script>
 import ThemedForm from '~/components/forms/ThemedForm'
-import FileInput from '~/components/FileInput'
 export default {
     name: 'UploadCVForm',
-    components: { ThemedForm, FileInput },
-    methods: {
-        onSubmit() {
-            const form = this.$refs.form.$el
-            const formData = new FormData(form)
-            console.log(...formData)
+    components: { ThemedForm },
+    data() {
+        return {
+            name: '',
+            telephone: '',
+            message: ''
+        }
+    },
+    computed: {
+        body() {
+            return `
+                mailto:hei@savvy.no?subject=Enquiry&body=Name: ${this.name}%0D%0DPhone: ${this.telephone}%0D%0DMessage: ${this.message}%0D%0D
+            `
         }
     }
 }
