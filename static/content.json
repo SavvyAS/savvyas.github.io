@@ -20,6 +20,11 @@
                     "logoPath": "/images/fjordtours.svg",
                     "backgroundPath": "/images/client-background-3.svg",
                     "name": "Fjord Tours"
+                },
+                {
+                    "logoPath": "/images/Sbanken_logo.svg",
+                    "backgroundPath": "/images/Sbanken_bakgrunn.png",
+                    "name": "Sbanken"
                 }
             ],
             "competence": [
@@ -63,8 +68,22 @@
                     "logoPath": "/images/fjordtours.svg",
                     "backgroundPath": "/images/client-background-2-wide.svg",
                     "name": "Fjord Tours",
-                    "text": "Fjord Tours, founded in 1982, offers package tours, activities and hotels throughout Norway on both the Norwegian and international market. Several of our employees have previous experience working for Fjord Tours and we are proud to announce that Savvy will be working with them in the near future.",
+                    "text": "Fjord Tours, founded in 1982, offers package tours, activities and hotels throughout Norway on both the Norwegian and international market. Savvy is aiding development of their core platform.",
                     "websiteUrl": "https://fjordtours.com"
+                }, 
+                {
+                    "logoPath": "/images/Sbanken_logo.svg",
+                    "backgroundPath": "/images/Sbanken_bakgrunn.png",
+                    "name": "Sbanken",
+                    "text": "Sbanken is a bank with their main offices in Bergen, and is Norways first pure online bank. Savvy is a part of a team developing the next generation of online banking solutions.",
+                    "websiteUrl": "https://sbanken.no"
+                },  
+                {
+                    "logoPath": "/images/imove_logo.svg",
+                    "backgroundPath": "/images/imove_bakgrunn.png",
+                    "name": "imove",
+                    "text": "Imove is a new and innovative electric car subscription service, and often gets compared to Spotify for music and Netflix for film. Savvy is contributing to their core platform.",
+                    "websiteUrl": "https://imove.no"
                 }
             ]
         },
