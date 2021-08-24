@@ -11,6 +11,7 @@ export default {
         <article>
             <h1>{{ article.title }}</h1>
             <p>{{ article.description }}</p>
+
             <nuxt-content :document="article" />
 
             <author :author="article.author" />
@@ -18,7 +19,7 @@ export default {
     </div>
 </template>
 // TODO fix image size
-<style>
+<style lang="scss" scoped>
 .nuxt-content img {
     width: 50%;
 }

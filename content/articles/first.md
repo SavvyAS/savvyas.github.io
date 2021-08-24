@@ -1,13 +1,13 @@
 ---
-title: Min første bloggpost
-description: Learning how to use @nuxt/content to create a blog
-img: first-blog-post.jpg
-alt: Min første bloggpost
+title: Welcome to savvy.no
+description: Savvy is a new consulting firm with a clear vision. We have built this company from the ground up to make sure that our consultants are competent, ambitious, and happy. We do not believe in bread and circus, we believe in transparency, equality, and adventure. 
+img: /images/people/joachim.png
+alt: Welcome to savvy.no
 
 author:
   name: Joachim Carlsen
-  bio: Joachims bio
-  image: /images/people/joachim.png?w=400&f=webp&q=100
+  bio: Co-Founder of savvy
+  image: /images/people/joachim.png
 ---
 # Min føste bloggpost
 

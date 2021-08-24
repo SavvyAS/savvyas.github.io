@@ -56,6 +56,19 @@
                                 />
                             </div>
                         </div>
+                        <div class="link-wrapper">
+                            <NuxtLink to="/blog">
+                                <span>Blog</span>
+                            </NuxtLink>
+                            <div class="link-body">
+                                <img
+                                    src="~/assets/images/active-link.svg"
+                                    alt=""
+                                    width="140"
+                                    height="42"
+                                />
+                            </div>
+                        </div>
                     </div>
                     <button
                         class="navbar__mobile-button"
