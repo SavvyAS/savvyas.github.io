@@ -3,7 +3,7 @@ export default {
     async asyncData({ $content, params }) {
         const articles = await $content('articles')
             .only(['title', 'description', 'img', 'slug', 'author'])
-            .sortBy('createdAt', 'asc')
+            .sortBy('createdAt', 'desc')
             .fetch()
 
         return { articles }
@@ -14,23 +14,12 @@ export default {
     <div class="blogmain container">
         <header>
             <div class="row">
-                <h1 class="column-4 agency__heading">Blog posts</h1>
+                <h1 class="column-4 blogmain__heading">Blog posts</h1>
             </div>
         </header>
-        <div class="row">
-            <NuxtImg
-                class="column graffiti-top"
-                src="/images/graffiti.svg"
-                quality="100"
-                format="webp"
-                width="413"
-                height="408"
-                alt=""
-            />
-        </div>
         <section class="articles">
             <div
-                v-for="article of articles"
+                v-for="(article, index) in articles"
                 :key="article.slug"
                 class="row articles__row"
             >
