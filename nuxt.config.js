@@ -83,7 +83,8 @@ export default {
     modules: [
         '@nuxtjs/style-resources',
         '@nuxtjs/google-analytics',
-        '@nuxtjs/gtm'
+        '@nuxtjs/gtm',
+        '@nuxt/content'
     ],
     // style resources
     styleResources: {
