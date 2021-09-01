@@ -38,9 +38,6 @@ export default {
                         </template>
                         <template #body>
                             <div class="vertical-align-center">
-                                <!-- <small>
-                                    {{ article.author.name }}
-                                </small> -->
                                 <h3 class="mb-1\/2">
                                     <NuxtLink
                                         :to="{

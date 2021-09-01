@@ -111,4 +111,6 @@ export default {
     gtm: {
         id: 'GTM-NCL695S'
     }
+    ,
+    telemetry: false
 }

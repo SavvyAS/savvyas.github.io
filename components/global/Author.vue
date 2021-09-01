@@ -10,26 +10,6 @@
                         quality="100"
                         sizes="sm:400px md:100% lg:800px"
                     />
-                    <div v-if="index === 1" class="graffiti">
-                        <NuxtImg
-                            src="/images/graffiti_2.svg"
-                            format="webp"
-                            width="379"
-                            quality="100"
-                            height="431"
-                            alt=""
-                        />
-                    </div>
-                    <div v-if="index === 3" class="graffiti">
-                        <NuxtImg
-                            src="/images/graffiti.svg"
-                            format="webp"
-                            quality="100"
-                            width="413"
-                            height="408"
-                            alt=""
-                        />
-                    </div>
                 </div>
             </template>
             <template #body>
@@ -40,29 +20,6 @@
                     <p>
                         {{ author.bio }}
                     </p>
-                    <Button @click="showSendMessageModal"> Ask for cv </Button>
-                    <div v-if="index === 1" class="graffiti-mobile">
-                        <NuxtImg
-                            src="/images/graffiti_2.svg"
-                            format="webp"
-                            quality="100"
-                            width="379"
-                            :style="{ position: 'relative' }"
-                            height="431"
-                            alt=""
-                        />
-                    </div>
-                    <div v-if="index === 3" class="graffiti-mobile">
-                        <NuxtImg
-                            src="/images/graffiti.svg"
-                            format="webp"
-                            width="413"
-                            quality="100"
-                            height="408"
-                            :style="{ position: 'relative' }"
-                            alt=""
-                        />
-                    </div>
                 </div>
             </template>
         </Card>
