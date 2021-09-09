@@ -99,9 +99,6 @@ export default {
     }
 }
 
-.articles {
-}
-
 .read-more {
     float: bottom;
 }
