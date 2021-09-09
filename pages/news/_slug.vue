@@ -9,8 +9,7 @@ export default {
 <template>
     <div class="article container">
         <article>
-            <h1>{{ article.title }}</h1>
-            <p>{{ article.description }}</p>
+            <p>{{ article.title }}</p>
 
             <nuxt-content :document="article" />
 

@@ -1,6 +1,5 @@
 ---
 title: Welcome to savvy.no
-short: Welcome to savvy.no, your new development partner.
 description: Savvy is a new consulting firm with a clear vision. We have built this company from the ground up to make sure that our consultants are competent, ambitious, and happy. We do not believe in bread and circus, we believe in transparency, equality, and adventure. 
 img: /images/article_default.png
 alt: Welcome to savvy.no

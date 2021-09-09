@@ -31,6 +31,19 @@
                             </div>
                         </div>
                         <div class="link-wrapper">
+                            <NuxtLink to="/news/">
+                                <span>News</span>
+                            </NuxtLink>
+                            <div class="link-body">
+                                <img
+                                    src="~/assets/images/active-link.svg"
+                                    alt=""
+                                    width="140"
+                                    height="42"
+                                />
+                            </div>
+                        </div>
+                        <div class="link-wrapper">
                             <NuxtLink to="/agency">
                                 <span>Agency</span>
                             </NuxtLink>
@@ -46,19 +59,6 @@
                         <div class="link-wrapper">
                             <NuxtLink to="/contact">
                                 <span>Contact</span>
-                            </NuxtLink>
-                            <div class="link-body">
-                                <img
-                                    src="~/assets/images/active-link.svg"
-                                    alt=""
-                                    width="140"
-                                    height="42"
-                                />
-                            </div>
-                        </div>
-                        <div class="link-wrapper">
-                            <NuxtLink to="/blog">
-                                <span>Blog</span>
                             </NuxtLink>
                             <div class="link-body">
                                 <img
@@ -114,7 +114,7 @@ export default {
         z-index: 1;
     }
 
-    a.nuxt-link-exact-active ~ .link-body {
+    a.nuxt-link-active ~ .link-body {
         visibility: visible;
     }
     a {
@@ -122,7 +122,7 @@ export default {
         z-index: 2;
     }
 
-    a:not(.nuxt-link-exact-active) {
+    a:not(.nuxt-link-active) {
         &:hover {
             color: $color-primary;
         }

@@ -1,6 +1,5 @@
 ---
 title: Collaboration with imove 
-short: We're happy to announce our collaboration with imove
 description: We're happy to announce our collaboration with imove
 img: /images/article_default.png
 alt: Collaboration with imove 
