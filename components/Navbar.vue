@@ -31,8 +31,8 @@
                             </div>
                         </div>
                         <div class="link-wrapper">
-                            <NuxtLink to="/news/">
-                                <span>News</span>
+                            <NuxtLink to="/agency">
+                                <span>Agency</span>
                             </NuxtLink>
                             <div class="link-body">
                                 <img
@@ -44,8 +44,8 @@
                             </div>
                         </div>
                         <div class="link-wrapper">
-                            <NuxtLink to="/agency">
-                                <span>Agency</span>
+                            <NuxtLink to="/news/">
+                                <span>News</span>
                             </NuxtLink>
                             <div class="link-body">
                                 <img

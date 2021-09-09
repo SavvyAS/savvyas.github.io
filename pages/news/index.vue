@@ -77,6 +77,10 @@ export default {
     p {
         font-size: base(1.2);
     }
+
+    @media screen and (max-width: map-get($breakpoints, 'lg')) {
+        grid-column: span 6;
+    }
 }
 
 .articles .article-card {
@@ -89,6 +93,13 @@ export default {
     img {
         margin-bottom: base(1);
     }
+
+    @media screen and (max-width: map-get($breakpoints, 'lg')) {
+        grid-column: span 6;
+    }
+}
+
+.articles {
 }
 
 .read-more {
