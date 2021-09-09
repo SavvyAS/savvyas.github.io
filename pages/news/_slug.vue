@@ -15,15 +15,10 @@ export default {
                 {{ new Date(article.createdAt).toDateString() }}</small
             >
         </header>
-        <article>
-            <div class="ingress">
-                <NuxtImg :src="article.img" format="webp" />
-                <p class="paragraph-large">{{ article.description }}</p>
-            </div>
-
-            <div class="article-content">
-                <nuxt-content :document="article" />
-            </div>
+        <NuxtImg class="ingress-img" :src="article.img" format="webp" />
+        <p class="ingress-text paragraph-large">{{ article.description }}</p>
+        <article class="article-content">
+            <nuxt-content :document="article" />
         </article>
     </div>
 </template>
@@ -34,16 +29,30 @@ export default {
 }
 
 .article {
+    display: grid;
+    grid-gap: base(4);
+    grid-template-columns: repeat(8, 1fr);
+
     &__heading {
-        width: 80%;
-        padding: 10%;
+        grid-column-start: 2;
+        grid-column-end: 8;
+
+        margin-top: base(10);
+        margin-bottom: base(5);
+        @media screen and(max-width: map-get($breakpoints, md)) {
+            margin-top: base(5);
+        }
     }
 }
 
-.ingress {
-    display: grid;
-    grid-gap: base(4);
-    grid-template-columns: 3fr 2fr;
+.ingress-img {
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+.ingress-text {
+    grid-column-start: 6;
+    grid-column-end: 9;
 }
 
 .published-date {
@@ -51,18 +60,11 @@ export default {
 }
 
 .article-content {
-    width: 80%;
-    padding: 10%;
+    grid-column-start: 2;
+    grid-column-end: 8;
 }
 
 // .article {
-//     display: grid;
-//     grid-template-columns: repeat(6, 1fr);
-//     grid-gap: base(1);
-
-//     &__heading {
-//         grid-column: span 6;
-//         margin-top: base(10);
 //         margin-bottom: base(5);
 //         @media screen and(max-width: map-get($breakpoints, md)) {
 //             margin-top: base(5);

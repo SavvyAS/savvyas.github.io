@@ -8,6 +8,11 @@
                 >
                     Want to be part of our team?
                 </h3>
+
+                <h3 v-if="$route.name === 'news-slug'" class="color-secondary">
+                    Want to read more stories?
+                </h3>
+
                 <h3 v-else class="color-secondary">
                     Want to collaborate with us?
                 </h3>
@@ -18,6 +23,13 @@
                 >
                     Send your CV
                 </Button>
+                <NuxtLink
+                    v-if="$route.name === 'news-slug'"
+                    to="/news"
+                    class="color-secondary"
+                >
+                    <Button> Read more </Button>
+                </NuxtLink>
                 <Button v-else @click="openSendMessageModal">Contact us</Button>
             </div>
         </div>
