@@ -80,7 +80,7 @@ export default {
     }
 
     @media screen and (max-width: map-get($breakpoints, 'lg')) {
-        grid-column: span 9;
+        grid-column: span 15;
     }
 }
 
@@ -104,13 +104,17 @@ export default {
     }
 
     @media screen and (max-width: map-get($breakpoints, 'lg')) {
-        grid-column: span 9;
+        grid-column: span 15;
     }
 }
 
 .articles .article-card:nth-child(2) {
     grid-column-start: 9;
     grid-column-end: span 7;
+
+    @media screen and (max-width: map-get($breakpoints, 'lg')) {
+        grid-column: span 15;
+    }
 }
 
 .read-more {
