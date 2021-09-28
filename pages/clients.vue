@@ -43,7 +43,7 @@
 
                                 <p>{{ client.text }}</p>
 
-                                <a :href="client.link">
+                                <a :href="client.websiteUrl">
                                     <Button @click="modal = true">
                                         Visit {{ client.name }}
                                     </Button>

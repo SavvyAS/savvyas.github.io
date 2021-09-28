@@ -29,7 +29,7 @@ export default {
             >
                 <img v-if="article.img" :src="article.img" />
 
-                <div class="">
+                <div class="title">
                     <p class="font-bold text-gray-600 text-sm">
                         {{ article.short || article.title }}
                     </p>
@@ -65,26 +65,31 @@ export default {
     }
 
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: base(1);
+    grid-template-columns: repeat(15, 1fr);
+    gap: base(1);
+    row-gap: base(2);
 
     width: 100%;
 }
 
 .articles .article-card:nth-child(n + 3) {
-    grid-column: span 2;
-
+    grid-column: span 5;
+    padding-bottom: base(1);
     p {
         font-size: base(1.2);
     }
 
     @media screen and (max-width: map-get($breakpoints, 'lg')) {
-        grid-column: span 6;
+        grid-column: span 9;
     }
 }
 
 .articles .article-card {
-    grid-column: span 3;
+    grid-column: span 7;
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: base(4);
 
     p {
         font-size: base(1.6);
@@ -94,9 +99,18 @@ export default {
         margin-bottom: base(1);
     }
 
-    @media screen and (max-width: map-get($breakpoints, 'lg')) {
-        grid-column: span 6;
+    .title {
+        flex: 1;
     }
+
+    @media screen and (max-width: map-get($breakpoints, 'lg')) {
+        grid-column: span 9;
+    }
+}
+
+.articles .article-card:nth-child(2) {
+    grid-column-start: 9;
+    grid-column-end: span 7;
 }
 
 .read-more {
