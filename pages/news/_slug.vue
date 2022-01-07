@@ -48,11 +48,17 @@ export default {
 .ingress-img {
     grid-column-start: 1;
     grid-column-end: 6;
+    @media screen and (max-width: map-get($breakpoints, md)) {
+        grid-column: 1 / 9
+    }
 }
 
 .ingress-text {
     grid-column-start: 6;
     grid-column-end: 9;
+    @media screen and (max-width: map-get($breakpoints, md)) {
+        grid-column: 1 / 9
+    }
 }
 
 .published-date {
