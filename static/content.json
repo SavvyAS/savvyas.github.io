@@ -1,10 +1,10 @@
 {
     "pages": {
         "home": {
-            "metaTitle": "Savvy | Home",
-            "metaDescription": "Welcome to savvy!",
-            "heading": "We are Savvy.",
-            "ingress": "Savvy is a new consulting firm with a clear vision. We have built this company from the ground up to make sure that our consultants are competent, ambitious, and happy. We do not believe in bread and circus, we believe in transparency, equality, and adventure.",
+            "metaTitle": "Savvy | Hjem",
+            "metaDescription": "Velkommen til Savvy!",
+            "heading": "Vi er Savvy.",
+            "ingress": "Savvy er et konsulentselskap med en klar visjon. Vi driver ikke med brød og sirkus, vi tror på åpenhet, likestilling og eventyr.",
             "clients": [
                 {
                     "logoPath": "/images/vipps.svg",
@@ -45,16 +45,16 @@
             ]
         },
         "clients": {
-            "metaTitle": "Savvy | Clients",
-            "metaDescription": "These are our clients!",
-            "heading": "Our clients",
-            "ingress": "We are proud of our clients and the work we have done for them. Due to the quality of our consultants we have had high profile clients from day one of our journey.",
+            "metaTitle": "Savvy | Kunder",
+            "metaDescription": "Dette er kundene våre!",
+            "heading": "Våre kunder",
+            "ingress": "Vi er stolt av kundene vi jobber for og verdien vi hjelper dem med å skape. Vi har hatt profilerte og spennende kunder fra første stund i Savvy.",
             "clients": [
                 {
                     "logoPath": "/images/vipps.svg",
                     "backgroundPath": "/images/client-background-1-wide.svg",
                     "name": "Vipps",
-                    "text": "BankID is Norways most preferred solution for ID services, trusted by public services, banks, insurance, among many others. Savvy is contributing to the next generation of the BankID solutions.",
+                    "text": "BankID er Norges foretrukne løsning for ID-tjenester, benyttet av offentlige tjenester, banker, forsikringselskaper og mange flere. Savvy bidrar i arbeidet med neste generasjon av BankID sine tjenester.",
                     "websiteUrl": "https://bankid.no"
                 },
                 {
