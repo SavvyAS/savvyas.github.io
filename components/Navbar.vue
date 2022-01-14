@@ -43,6 +43,7 @@
                                 />
                             </div>
                         </div>
+                        <!-- 
                         <div class="link-wrapper">
                             <NuxtLink to="/news/">
                                 <span>News</span>
@@ -56,6 +57,7 @@
                                 />
                             </div>
                         </div>
+                        -->
                         <div class="link-wrapper">
                             <NuxtLink to="/contact">
                                 <span>Contact</span>
