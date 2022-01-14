@@ -43,7 +43,7 @@
 
                                 <p>{{ client.text }}</p>
 
-                                <a :href="client.link">
+                                <a :href="client.websiteUrl">
                                     <Button @click="modal = true">
                                         Visit {{ client.name }}
                                     </Button>
@@ -61,6 +61,11 @@
 import { pages } from '~/static/content.json'
 export default {
     name: 'Clients',
+    data() {
+        return {
+            content: pages.clients
+        }
+    },
     head() {
         return {
             title: this.content.metaTitle,
@@ -71,11 +76,6 @@ export default {
                     content: this.content.metaDescription
                 }
             ]
-        }
-    },
-    data() {
-        return {
-            content: pages.clients
         }
     }
 }

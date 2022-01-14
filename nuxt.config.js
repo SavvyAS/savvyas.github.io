@@ -83,7 +83,8 @@ export default {
     modules: [
         '@nuxtjs/style-resources',
         '@nuxtjs/google-analytics',
-        '@nuxtjs/gtm'
+        '@nuxtjs/gtm',
+        '@nuxt/content'
     ],
     // style resources
     styleResources: {
@@ -110,4 +111,6 @@ export default {
     gtm: {
         id: 'GTM-NCL695S'
     }
+    ,
+    telemetry: false
 }
