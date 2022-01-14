@@ -19,7 +19,7 @@
                     <div class="navbar__links">
                         <div class="link-wrapper">
                             <NuxtLink to="/clients">
-                                <span>Clients</span>
+                                <span>Kunder</span>
                             </NuxtLink>
                             <div class="link-body">
                                 <img
@@ -32,7 +32,7 @@
                         </div>
                         <div class="link-wrapper">
                             <NuxtLink to="/agency">
-                                <span>Agency</span>
+                                <span>Selskapet</span>
                             </NuxtLink>
                             <div class="link-body">
                                 <img
@@ -46,7 +46,7 @@
                         <!-- 
                         <div class="link-wrapper">
                             <NuxtLink to="/news/">
-                                <span>News</span>
+                                <span>Nyheter</span>
                             </NuxtLink>
                             <div class="link-body">
                                 <img
@@ -60,7 +60,7 @@
                         -->
                         <div class="link-wrapper">
                             <NuxtLink to="/contact">
-                                <span>Contact</span>
+                                <span>Kontakt oss</span>
                             </NuxtLink>
                             <div class="link-body">
                                 <img

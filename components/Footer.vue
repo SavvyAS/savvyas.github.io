@@ -6,34 +6,36 @@
                     v-if="$route.name === 'agency' || $route.name === 'contact'"
                     class="color-secondary"
                 >
-                    Want to be part of our team?
+                    Har du lyst til å bli med?
                 </h3>
 
                 <h3
                     v-else-if="$route.name === 'news-slug'"
                     class="color-secondary"
                 >
-                    Want to read more stories?
+                    Vil du lese flere nyheter?
                 </h3>
 
                 <h3 v-else class="color-secondary">
-                    Want to collaborate with us?
+                    Har du lyst til å samarbeide med oss?
                 </h3>
 
                 <Button
                     v-if="$route.name === 'agency'"
                     @click="openUploadCVModal"
                 >
-                    Send your CV
+                    Send CV
                 </Button>
                 <NuxtLink
                     v-else-if="$route.name === 'news-slug'"
                     to="/news"
                     class="color-secondary"
                 >
-                    <Button> All news </Button>
+                    <Button> Alle nyheter </Button>
                 </NuxtLink>
-                <Button v-else @click="openSendMessageModal">Contact us</Button>
+                <Button v-else @click="openSendMessageModal">
+                    Kontakt oss
+                </Button>
             </div>
         </div>
         <div class="row">
@@ -50,13 +52,13 @@
                     </address>
                     <nav class="links">
                         <NuxtLink to="/clients" class="color-secondary">
-                            Clients
+                            Kunder
                         </NuxtLink>
                         <NuxtLink to="/agency" class="color-secondary">
-                            Agency
+                            Selskapet
                         </NuxtLink>
                         <NuxtLink to="/contact" class="color-secondary">
-                            Contact
+                            Kontakt oss
                         </NuxtLink>
                     </nav>
                 </div>
