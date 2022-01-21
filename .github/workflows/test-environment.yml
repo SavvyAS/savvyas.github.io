@@ -20,7 +20,7 @@ jobs:
               with:
                 changes: dist 
                 repository: git@github.com:SavvyAS/testsavvyas.github.io.git
-                ssh_key: ${{ secrets.CI_KEY }}
+                ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCl/Hrbgz94K7i9vBEPFJ8a9/pJMz9qoBqT5jDN/6VCI9JW3HNLUIPMK86goR2qGJ138qxyGeIi+9drR6uYzVRzUoXHjizDpbtwPy5CSlwZ9NhuySkuOYYnzWdZcLQEv7pSgYLhONwVc+d2InMhjHfiaMHmzU/DkQBFcWXrZk3zj0ftVb+HI2jRDd+675btYZ0cdWM2yIDALeuUkL+w+ejF0X04XRLmIIirFCEQVnag9KT3Yv6bZZoHVCfMBWfp8VzuoVcw1tyzmR2zCo4gV3kTx3g32d+YHFE4879CgPCAZk2fhZX1kvacPS18kF5S0Yarqf7P5aBrRaZpjBL+g0zzNTRSL8c7eCLiEwGFBGWGqn2N3n186YGsEgjPJDqmLHJBCxDVgnxrZOyY/RMoNlETM0KHq5Kir3DwhDk+2SofiHURFVXx94IUBQIEPEYVRyagKscY37PhUZ2jtAaWNHsSo1NBiCtQibV5So1IROoyL+sossuTwoodE8GIx6fADcs= hakon@savvy.no
                 name: kwrl 
                 email: hakon@savvy.no
                 clean_repo: true
