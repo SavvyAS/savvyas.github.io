@@ -53,7 +53,7 @@
                                 :href="content.guilty.webpageUrl"
                                 style="width: auto"
                             >
-                                <Button tabindex="-1">Visit Guilty</Button>
+                                <Button tabindex="-1">Besøk Guilty</Button>
                             </a>
                         </div>
                     </template>
