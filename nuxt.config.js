@@ -88,12 +88,20 @@ export default {
     ],
     // style resources
     styleResources: {
-        scss: ['~/assets/css/_variables.scss', '~/assets/css/_mixins.scss']
+        scss: ['~/assets/css/_variables.scss', '~/assets/css/_mixins.scss'],
+        hoistUseStatements: true
     },
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
         transpile: ['vue-final-modal'],
-        vendor: ['vue-marquee-text-component']
+        vendor: ['vue-marquee-text-component'],
+        
+
+        // Filthy hack to make math module work in sass files: https://github.com/nuxt-community/style-resources-module/issues/143#issuecomment-847413359
+        // Please do remove this if you have a proper solution.
+        extend(config, { loaders }){
+            loaders.scss.additionalData = '@use "sass:math";'
+        }
     },
     image: {
         // nuxt-img Options
