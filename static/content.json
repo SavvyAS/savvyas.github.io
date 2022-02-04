@@ -12,7 +12,7 @@
                     "name": "Vipps"
                 },
                 {
-                    "logoPath": "/images/quantik_logo.png",
+                    "logoPath": "/images/quantik-logo.svg",
                     "backgroundPath": "/images/client-background-2.svg",
                     "name": "Quantik"
                 },
@@ -79,7 +79,7 @@
                     "websiteUrl": "https://imove.no"
                 },
                 {
-                    "logoPath": "/images/quantik_logo.png",
+                    "logoPath": "/images/quantik-logo.svg",
                     "backgroundPath": "/images/client-background-2.svg",
                     "name": "Quantik",
                     "text": "Quantik er et FinTech-selskap som søker å forenkle alle bedrifters hverdag. Selskapet utfordrer den tradisjonelle måten å håndtere arbeidsflyten rundt inngåelse, signering og oppfølging av avtaler og kontrakter.",
