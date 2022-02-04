@@ -58,13 +58,6 @@
                     "websiteUrl": "https://bankid.no"
                 },
                 {
-                    "logoPath": "/images/fdir.svg",
-                    "backgroundPath": "/images/client-background-2.svg",
-                    "name": "Fiskeridirektoratet",
-                    "text": "Fiskeridirektoratet er myndighetenes rådgivende og utøvende organ innen fiskeri- og havbruksforvaltning i Norge. Savvy har vært en del av teamet som jobber med å utvikle det nye kvotesystemet deres.",
-                    "websiteUrl": "https://fiskeridir.no"
-                },
-                {
                     "logoPath": "/images/fjordtours.svg",
                     "backgroundPath": "/images/client-background-2-wide.svg",
                     "name": "Fjord Tours",
@@ -84,6 +77,13 @@
                     "name": "imove",
                     "text": "Imove er en ny og innovativ elbilabonnementstjeneste som ofte blir sammenlignet med Spotify for musikk og Netflix for film. Savvy bidrar til utviklingen av deres kjerneplattform.",
                     "websiteUrl": "https://imove.no"
+                },
+                {
+                    "logoPath": "/images/quantik_logo.png",
+                    "backgroundPath": "/images/client-background-2.svg",
+                    "name": "Quantik",
+                    "text": "Quantik er et FinTech-selskap som søker å forenkle alle bedrifters hverdag. Selskapet utfordrer den tradisjonelle måten å håndtere arbeidsflyten rundt inngåelse, signering og oppfølging av avtaler og kontrakter.",
+                    "websiteUrl": "https://quantik.app"
                 }
             ]
         },
