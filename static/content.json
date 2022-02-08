@@ -148,8 +148,14 @@
                     "imagePath": "/images/people/trandal.png",
                     "name": "Håkon Trandal",
                     "title": "Consultant",
-                    "about": "Håkon is a full stack developer with 8 years of .NET experience. He has worked on everything from small websites to computer games and large enterprise systems. Håkon works well in teams and is well respected for his ability to explain concepts.",
+                    "about": "Håkon is a full stack developer with 9 years of .NET experience. He has worked on everything from small websites to computer games and large enterprise systems. Håkon works well in teams and is well respected for his ability to explain concepts.",
                     "email": "hakon.trandal@savvy.no"
+                },
+                {
+                    "imagePath": "/images/header-image-1.png",
+                    "name": "New Employee",
+                    "title": "Consultant",
+                    "about": "Bringing over 8 years of experience from working with .NET and several front end technlogies, we can't wait to announce our new colleague starting in may!"
                 }
             ]
         },
