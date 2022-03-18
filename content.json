@@ -1,4 +1,4 @@
-{
+{ 
     "pages": {
         "home": {
             "metaTitle": "Savvy | Home",
@@ -156,6 +156,12 @@
                     "name": "New Employee",
                     "title": "Consultant",
                     "about": "Bringing over 8 years of experience from working with .NET and several front end technlogies, we can't wait to announce our new colleague starting in may!"
+                },
+                {
+                    "imagePath": "/images/header-image-1.png",
+                    "name": "New Employee",
+                    "title": "Consultant",
+                    "about": "We can't wait to announce our new colleague starting in august!"
                 }
             ]
         },
