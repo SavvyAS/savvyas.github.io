@@ -9,7 +9,7 @@
                 {
                     "logoPath": "/images/vipps.svg",
                     "backgroundPath": "/images/client-background-1.svg",
-                    "name": "Vipps"
+                    "name": "BankID"
                 },
                 {
                     "logoPath": "/images/fdir.svg",
@@ -53,7 +53,7 @@
                 {
                     "logoPath": "/images/vipps.svg",
                     "backgroundPath": "/images/client-background-1-wide.svg",
-                    "name": "Vipps",
+                    "name": "BankID",
                     "text": "BankID is Norways most preferred solution for ID services, trusted by public services, banks, insurance, among many others. Savvy is contributing to the next generation of the BankID solutions.",
                     "websiteUrl": "https://bankid.no"
                 },
