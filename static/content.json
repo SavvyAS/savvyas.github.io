@@ -171,6 +171,13 @@
                     "title": "Consultant",
                     "email": "asbjorn@savvy.no",
                     "about": "Asbjørn is a versatile developer with broad experience in the development of web solutions. Through projects at Sbanken, the Norwegian Armed Forces, Equinor, and previously as CTO for Powerzeek, he has faced challenging tasks and is used to a great deal of responsibility. He has experience of working both independently and in collaboration with others."
+                },
+                {
+                    "imagePath": "/images/header-image-1.png",
+                    "name": "New employee",
+                    "title": "Consultant",
+                    "email": "",
+                    "about": "We have a new employee starting in February of 2023!"
                 }
             ]
         },
