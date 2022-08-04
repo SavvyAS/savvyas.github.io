@@ -153,15 +153,24 @@
                 },
                 {
                     "imagePath": "/images/header-image-1.png",
-                    "name": "New Employee",
+                    "name": "Sindre Møgster Braaten",
                     "title": "Consultant",
-                    "about": "Bringing over 8 years of experience from working with .NET and several front end technlogies, we can't wait to announce our new colleague starting in may!"
+                    "email": "sindre@savvy.no",
+                    "about": "Sindre is a system developer who enjoys working with the backend as well as working with the frontend, during the development of systems. He has always had a fascination for finding out how systems actually work, regardless of whether it concerns how to efficiently perform heavy operations on a server, or how a user interface should behave as smoothly as possible."
                 },
                 {
                     "imagePath": "/images/header-image-1.png",
-                    "name": "New Employee",
+                    "name": "Ole Eskild Steensen",
                     "title": "Consultant",
-                    "about": "We can't wait to announce our new colleague starting in august!"
+                    "email": "ole@savvy.no",
+                    "about": "Ole Eskild has experience with a number of technologies and methodologies and has worked with everything from API services and cloud infrastructure to complex frontend applications. He thrives with ownership of the entire technology stack, but also likes to brush up on pure backend or frontend projects."
+                },
+                {
+                    "imagePath": "/images/header-image-1.png",
+                    "name": "Asbjørn Rekve",
+                    "title": "Consultant",
+                    "email": "asbjorn@savvy.no",
+                    "about": "Asbjørn is a versatile developer with broad experience in the development of web solutions. Through projects at Sbanken, the Norwegian Armed Forces, Equinor, and previously as CTO for Powerzeek, he has faced challenging tasks and is used to a great deal of responsibility. He has experience of working both independently and in collaboration with others."
                 }
             ]
         },
