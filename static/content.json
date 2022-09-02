@@ -152,7 +152,7 @@
                     "email": "hakon.trandal@savvy.no"
                 },
                 {
-                    "imagePath": "/images/header-image-1.png",
+                    "imagePath": "/images/people/sindre.png",
                     "name": "Sindre Møgster Braaten",
                     "title": "Consultant",
                     "email": "sindre@savvy.no",
@@ -166,7 +166,7 @@
                     "about": "Ole Eskild has experience with a number of technologies and methodologies and has worked with everything from API services and cloud infrastructure to complex frontend applications. He thrives with ownership of the entire technology stack, but also likes to brush up on pure backend or frontend projects."
                 },
                 {
-                    "imagePath": "/images/header-image-1.png",
+                    "imagePath": "/images/people/asbjorn.png",
                     "name": "Asbjørn Rekve",
                     "title": "Consultant",
                     "email": "asbjorn@savvy.no",
