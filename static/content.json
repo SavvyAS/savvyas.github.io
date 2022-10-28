@@ -25,6 +25,11 @@
                     "logoPath": "/images/Sbanken_logo.svg",
                     "backgroundPath": "/images/Sbanken_bakgrunn.png",
                     "name": "Sbanken"
+                },
+                {
+                    "logoPath": "/images/adventure_tech_logo.svg",
+                    "backgroundPath": "/images/client-background-4.svg",
+                    "name": "Adventure Tech"
                 }
             ],
             "competence": [
@@ -58,11 +63,11 @@
                     "websiteUrl": "https://bankid.no"
                 },
                 {
-                    "logoPath": "/images/fdir.svg",
-                    "backgroundPath": "/images/client-background-2.svg",
-                    "name": "Fiskeridirektoratet",
-                    "text": "The Directorate of Fisheries is a branch of the Norwegian government that is responsible for managing Norway's marine resources. Savvy has been a part of a team that's been developing a new system for managing fishing quotas.",
-                    "websiteUrl": "https://fiskeridir.no"
+                    "logoPath": "/images/adventure_tech_logo.svg",
+                    "backgroundPath": "/images/client-background-4.svg",
+                    "name": "Adventure Tech",
+                    "text": "Adventure Tech is a Norwegian tech company providing software for the adventure travel business.",
+                    "websiteUrl": "https://adventuretech.no/"
                 },
                 {
                     "logoPath": "/images/fjordtours.svg",
@@ -71,6 +76,13 @@
                     "text": "Fjord Tours, founded in 1982, offers package tours, activities and hotels throughout Norway on both the Norwegian and international market. Savvy is aiding development of their core platform.",
                     "websiteUrl": "https://fjordtours.com"
                 }, 
+                {
+                    "logoPath": "/images/fdir.svg",
+                    "backgroundPath": "/images/client-background-2.svg",
+                    "name": "Fiskeridirektoratet",
+                    "text": "The Directorate of Fisheries is a branch of the Norwegian government that is responsible for managing Norway's marine resources. Savvy has been a part of a team that's been developing a new system for managing fishing quotas.",
+                    "websiteUrl": "https://fiskeridir.no"
+                },
                 {
                     "logoPath": "/images/Sbanken_logo.svg",
                     "backgroundPath": "/images/Sbanken_bakgrunn.png",
