@@ -6,9 +6,9 @@
         @input="$emit('input')"
     >
         <nav>
-            <NuxtLink to="/clients" class="h1">Clients</NuxtLink>
-            <NuxtLink to="/agency" class="h1">Agency</NuxtLink>
-            <NuxtLink to="/contact" class="h1">Contact</NuxtLink>
+            <NuxtLink to="/clients" class="h1">Kunder</NuxtLink>
+            <NuxtLink to="/agency" class="h1">Selskapet</NuxtLink>
+            <NuxtLink to="/contact" class="h1">Kontakt oss</NuxtLink>
         </nav>
     </BaseModal>
 </template>
