@@ -1,8 +1,8 @@
 <template>
     <ThemedForm id="form" ref="form" @submit="onSubmit">
-        <Input v-model="name" placeholder="Your name *" name="Name" />
-        <Input v-model="telephone" placeholder="Phone" name="Telephone" />
-        <Input v-model="message" placeholder="Message *" name="Message" />
+        <Input v-model="name" placeholder="Navn *" name="Name" />
+        <Input v-model="telephone" placeholder="Telefon" name="Telephone" />
+        <Input v-model="message" placeholder="Melding *" name="Message" />
         <div style="display: grid; justify-items: end">
             <a :href="body">
                 <Button
