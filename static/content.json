@@ -72,13 +72,6 @@
                     "websiteUrl": "https://fjordtours.com"
                 }, 
                 {
-                    "logoPath": "/images/fdir.svg",
-                    "backgroundPath": "/images/client-background-2.svg",
-                    "name": "Fiskeridirektoratet",
-                    "text": "The Directorate of Fisheries is a branch of the Norwegian government that is responsible for managing Norway's marine resources. Savvy has been a part of a team that's been developing a new system for managing fishing quotas.",
-                    "websiteUrl": "https://fiskeridir.no"
-                },
-                {
                     "logoPath": "/images/Sbanken_logo.svg",
                     "backgroundPath": "/images/Sbanken_bakgrunn.png",
                     "name": "Sbanken",
@@ -89,7 +82,7 @@
                     "logoPath": "/images/imove_logo.svg",
                     "backgroundPath": "/images/imove_bakgrunn.png",
                     "name": "imove",
-                    "text": "Imove er en ny og innovativ elbilabonnementstjeneste som ofte blir sammenlignet med Spotify for musikk og Netflix for film. Savvy bidrar til utviklingen av deres kjerneplattform.",
+                    "text": "Imove er en ny og innovativ abonnementstjeneste for elbil som ofte blir sammenlignet med Spotify for musikk og Netflix for film. Savvy bidrar til utviklingen av deres kjerneplattform.",
                     "websiteUrl": "https://imove.no"
                 },
                 {
@@ -98,6 +91,13 @@
                     "name": "Quantik",
                     "text": "Quantik er et FinTech-selskap som søker å forenkle alle bedrifters hverdag. Selskapet utfordrer den tradisjonelle måten å håndtere arbeidsflyten rundt inngåelse, signering og oppfølging av avtaler og kontrakter.",
                     "websiteUrl": "https://quantik.app"
+                },
+                {
+                    "logoPath": "/images/fdir.svg",
+                    "backgroundPath": "/images/client-background-2.svg",
+                    "name": "Fiskeridirektoratet",
+                    "text": "Fiskeridirektoratet er myndighetenes fremste rådgivende og utøvende organ innen fiskeriforvaltningen i Norge. Direktoratets hovedoppgave er planmessig å arbeide for at norsk fiskeri- og havbruksnæring fremmes og utvikles til beste for dem som arbeider i næringen og slik at fiskeressursene på lang sikt gir et optimalt utbytte.",
+                    "websiteUrl": "https://fiskeridir.no"
                 }
             ]
         },
