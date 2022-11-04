@@ -51,9 +51,9 @@
             "ingress": "Vi er stolte av kundene våre og verdien de tilfører samfunnet. Kundene våre spenner fra små til store selskaper, fra reiselivsnæringen til finans.",
             "clients": [
                 {
-                    "logoPath": "/images/vipps.svg",
+                    "logoPath": "/images/bankid.svg",
                     "backgroundPath": "/images/client-background-1-wide.svg",
-                    "name": "Vipps",
+                    "name": "BankID BankAxept",
                     "text": "BankID er Norges foretrukne løsning for ID-tjenester, benyttet av offentlige tjenester, banker, forsikringselskaper og mange flere. Savvy bidrar i arbeidet med neste generasjon av BankID sine tjenester.",
                     "websiteUrl": "https://bankid.no"
                 },
