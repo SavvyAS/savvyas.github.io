@@ -194,7 +194,7 @@ export default {
     },
     head() {
         return {
-            title: this.content.title,
+            title: this.content.metaTitle,
             meta: [
                 {
                     hid: 'description',
