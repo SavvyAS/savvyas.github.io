@@ -18,7 +18,6 @@
                             {{ content.text }}
                         </p>
                         <div class="grid-layout__contact">
-                            <small>Ta kontakt</small>
                             <a :href="`tel:${telephone}`">
                                 <h3>{{ telephone }}</h3>
                             </a>
@@ -27,7 +26,6 @@
                             </a>
                         </div>
                         <address class="grid-layout__address">
-                            <small>Adresse</small>
                             <h3>{{ address }}</h3>
                             <h3>{{ postal }}</h3>
                         </address>

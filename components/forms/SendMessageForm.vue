@@ -1,11 +1,6 @@
 <template>
     <ThemedForm>
-        <Input
-            v-model="name"
-            placeholder="Ditt navn"
-            name="user_name"
-            required
-        />
+        <Input v-model="name" placeholder="Navn" name="user_name" required />
         <Input v-model="company" placeholder="Selskap" name="user_company" />
         <Input
             v-model="telephone"

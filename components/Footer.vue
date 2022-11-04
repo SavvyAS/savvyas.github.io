@@ -6,7 +6,7 @@
                     v-if="$route.name === 'agency' || $route.name === 'contact'"
                     class="color-secondary"
                 >
-                    Har du lyst til å bli med?
+                    Har du lyst til å bli bedre kjent med oss?
                 </h3>
 
                 <h3
@@ -34,7 +34,7 @@
                     <Button> Alle nyheter </Button>
                 </NuxtLink>
                 <Button v-else @click="openSendMessageModal">
-                    Kontakt oss
+                    Send oss en melding
                 </Button>
             </div>
         </div>
