@@ -1,4 +1,4 @@
-{
+{ 
     "pages": {
         "home": {
             "metaTitle": "Savvy | Hjem",
@@ -9,7 +9,7 @@
                 {
                     "logoPath": "/images/vipps.svg",
                     "backgroundPath": "/images/client-background-1.svg",
-                    "name": "Vipps"
+                    "name": "BankID"
                 },
                 {
                     "logoPath": "/images/quantik_logo.png",
@@ -25,6 +25,11 @@
                     "logoPath": "/images/Sbanken_logo.svg",
                     "backgroundPath": "/images/Sbanken_bakgrunn.png",
                     "name": "Sbanken"
+                },
+                {
+                    "logoPath": "/images/adventure_tech_logo.svg",
+                    "backgroundPath": "/images/client-background-4.svg",
+                    "name": "Adventure Tech"
                 }
             ],
             "competence": [
@@ -58,12 +63,26 @@
                     "websiteUrl": "https://bankid.no"
                 },
                 {
+                    "logoPath": "/images/adventure_tech_logo.svg",
+                    "backgroundPath": "/images/client-background-4.svg",
+                    "name": "Adventure Tech",
+                    "text": "Adventure Tech is a Norwegian tech company providing software for the adventure travel business.",
+                    "websiteUrl": "https://adventuretech.no/"
+                },
+                {
                     "logoPath": "/images/fjordtours.svg",
                     "backgroundPath": "/images/client-background-2-wide.svg",
                     "name": "Fjord Tours",
                     "text": "Fjord Tours AS er en sentral aktør i norsk reiseliv og tilbyr en rekke produkter i Norge. Fjord Tours er en distributør for en rekke andre aktører og har sterk tilknytning til aktører som Tide og Vy. Kjernen av deres virksomhet er salg av pakketurer i Norge, hvor deres mest kjente produkt er Norway in a Nutshell.",
                     "websiteUrl": "https://fjordtours.com"
                 }, 
+                {
+                    "logoPath": "/images/fdir.svg",
+                    "backgroundPath": "/images/client-background-2.svg",
+                    "name": "Fiskeridirektoratet",
+                    "text": "The Directorate of Fisheries is a branch of the Norwegian government that is responsible for managing Norway's marine resources. Savvy has been a part of a team that's been developing a new system for managing fishing quotas.",
+                    "websiteUrl": "https://fiskeridir.no"
+                },
                 {
                     "logoPath": "/images/Sbanken_logo.svg",
                     "backgroundPath": "/images/Sbanken_bakgrunn.png",
@@ -150,6 +169,34 @@
                     "title": "Konsulent",
                     "about": "Håkon er en fullstack-utvikler med 8 års .NET-erfaring. Han har jobbet med alt fra små nettsider til dataspill og store bedriftssystemer. Håkon jobber godt i team og er godt respektert for sin evne til å forklare begreper.",
                     "email": "hakon.trandal@savvy.no"
+                },
+                {
+                    "imagePath": "/images/people/sindre.png",
+                    "name": "Sindre Møgster Braaten",
+                    "title": "Consultant",
+                    "email": "sindre@savvy.no",
+                    "about": "Sindre is a system developer who enjoys working with the backend as well as working with the frontend, during the development of systems. He has always had a fascination for finding out how systems actually work, regardless of whether it concerns how to efficiently perform heavy operations on a server, or how a user interface should behave as smoothly as possible."
+                },
+                {
+                    "imagePath": "/images/header-image-1.png",
+                    "name": "Ole Eskild Steensen",
+                    "title": "Consultant",
+                    "email": "ole@savvy.no",
+                    "about": "Ole Eskild has experience with a number of technologies and methodologies and has worked with everything from API services and cloud infrastructure to complex frontend applications. He thrives with ownership of the entire technology stack, but also likes to brush up on pure backend or frontend projects."
+                },
+                {
+                    "imagePath": "/images/people/asbjorn.png",
+                    "name": "Asbjørn Rekve",
+                    "title": "Consultant",
+                    "email": "asbjorn@savvy.no",
+                    "about": "Asbjørn is a versatile developer with broad experience in the development of web solutions. Through projects at Sbanken, the Norwegian Armed Forces, Equinor, and previously as CTO for Powerzeek, he has faced challenging tasks and is used to a great deal of responsibility. He has experience of working both independently and in collaboration with others."
+                },
+                {
+                    "imagePath": "/images/header-image-1.png",
+                    "name": "New employee",
+                    "title": "Consultant",
+                    "email": "",
+                    "about": "We have a new employee starting in February of 2023!"
                 }
             ]
         },
