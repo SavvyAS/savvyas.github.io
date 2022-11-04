@@ -24,7 +24,7 @@
                                 </h1>
                                 <AnimatedHeading />
                                 <NuxtLink to="/agency">
-                                    <Button tabindex="-1">The agency</Button>
+                                    <Button tabindex="-1">Selskapet</Button>
                                 </NuxtLink>
                             </div>
                         </div>

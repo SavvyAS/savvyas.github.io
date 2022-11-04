@@ -147,7 +147,7 @@
                                     {{ person.email }}
                                 </a>
                                 <Button @click="showSendMessageModal">
-                                    Ask for cv
+                                    Be om CV
                                 </Button>
                                 <div v-if="index === 1" class="graffiti-mobile">
                                     <NuxtImg

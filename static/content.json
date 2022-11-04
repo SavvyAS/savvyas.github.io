@@ -4,17 +4,12 @@
             "metaTitle": "Savvy | Hjem",
             "metaDescription": "Velkommen til Savvy!",
             "heading": "Vi er Savvy.",
-            "ingress": "Savvy er et konsulentselskap med en klar visjon. Vi driver ikke med brød og sirkus, vi tror på åpenhet, likestilling og eventyr.",
+            "ingress": "Vi er Savvy, seniorutviklere som er håndplukket gjennom relasjoner, der alle eier en bit av selskapet. Vi har tung kompetanse, kombinert med en klar røst. Vi skriver ikke bare kode, vi bidrar med kompetanse og tydelige meninger i prosjektene vi jobber på. ",
             "clients": [
                 {
                     "logoPath": "/images/vipps.svg",
                     "backgroundPath": "/images/client-background-1.svg",
                     "name": "BankID"
-                },
-                {
-                    "logoPath": "/images/quantik_logo.png",
-                    "backgroundPath": "/images/client-background-2.svg",
-                    "name": "Quantik"
                 },
                 {
                     "logoPath": "/images/fjordtours.svg",
@@ -66,7 +61,7 @@
                     "logoPath": "/images/adventure_tech_logo.svg",
                     "backgroundPath": "/images/client-background-4.svg",
                     "name": "Adventure Tech",
-                    "text": "Adventure Tech is a Norwegian tech company providing software for the adventure travel business.",
+                    "text": "Adventure Tech er et norsk teknologiselskap som leverer IT-løsninger til reiselivsbransjen.",
                     "websiteUrl": "https://adventuretech.no/"
                 },
                 {
@@ -108,29 +103,29 @@
         },
         "agency": {
             "metaTitle": "Savvy | Selskapet",
-            "metaDescription": "This is our agency!",
+            "metaDescription": "Vi er Savvy!",
             "heading": "Vi er Savvy",
-            "ingress": "Savvy ble grunnlagt av erfarne konsulenter fra IT-bransjen med en ambisjon om å lage et selskap som åpent og pålitelig.",
+            "ingress": "Savvy ble grunnlagt av erfarne konsulenter fra IT-bransjen med en ambisjon om å lage et selskap som åpent og pålitelig. Alle som jobber i Savvy er også medeiere i selskapet. Dette fordi vi tror at dyktige konsulenter som har eierskap til arbeidsplassen gir det lille ekstra for at våre kunder skal lykkes.",
             "text": "",
             "guilty": {
                 "heading": "Savvy & guilty",
-                "text": "Guilty er Savvy sitt søsterselskap.",
+                "text": "Sammen med vårt søsterselskap er vi et kompetansehus med 25 spesialister innen design, teknologi og forretningsutvikling.",
                 "webpageUrl": "http://guilty.no"
             },
             "list": {
                 "heading": "Det vi brenner for;",
                 "items": [
                     {
-                        "name": "Åpenhet",
-                        "modalContent": "Vi tror ikke på å gjøre avtaler bak lukkede dører. Alle våre ansatte har full tilgang til informasjon om hvordan selskapet drives. De har tilgang til hver enkelt kontrakt mellom Savvy AS og enhver annen part, og det inkluderer hverandres arbeidskontrakter. Vi gjør ikke avtaler som vi ikke kan forsvare overfor våre ansatte."
+                        "name": "Modig",
+                        "modalContent": "Vi er kompetente utviklere. For at kundene våre skal få maksimalt utbytte av kompetansen vi innehar så trenger de at vi deler den. Vi rir ikke kjepphester, men vi går ikke ut av et møte uten å ha delt meningene våre."
                     },
                     {
-                        "name": "Likhet",
-                        "modalContent": "Vi differensierer ikke mellom våre ansatte. Samtlige av våre konsulenter har de samme gunstige lønnsbetingelsene og de er medeiere i selskapet."
+                        "name": "Åpen",
+                        "modalContent": "Vi mener at den beste måten å sørge for at alt vi gjør tåler dagens lys er å konstant oppholde seg i dagens lys. Alle våre ansatte har full innsikt i avtalene selskapet inngår og retningen selskapet tar. Beslutningene vi tar står vi inne for, sammen."
                     },
                     {
-                        "name": "Eventyrlyst",
-                        "modalContent": "Vi vil ut på eventyr og vi vil ha deg med oss."
+                        "name": "Stolt",
+                        "modalContent": "Vi er stolt av den faglige kompetansen vår og arbeidet vi leverer. Hver og en av oss er stolt av egne ferdigheter så vel som kollegaene våre."
                     }
                 ]
             },
@@ -173,30 +168,37 @@
                 {
                     "imagePath": "/images/people/sindre.png",
                     "name": "Sindre Møgster Braaten",
-                    "title": "Consultant",
+                    "title": "Konsulent",
                     "email": "sindre@savvy.no",
-                    "about": "Sindre is a system developer who enjoys working with the backend as well as working with the frontend, during the development of systems. He has always had a fascination for finding out how systems actually work, regardless of whether it concerns how to efficiently perform heavy operations on a server, or how a user interface should behave as smoothly as possible."
+                    "about": "Sindre er en systemutvikler som trives like godt med å jobbe med backend, som å jobbe med frontend, under utvikling av systemer. Han har alltid hatt en fasinasjon for å finne ut hvordan systemer faktisk virker, uavhengig av om det gjelder hvordan effektivt gjør tunge operasjoner på en server, eller et brukergrensesnitt skal oppføre seg så smidig som mulig."
                 },
                 {
                     "imagePath": "/images/header-image-1.png",
                     "name": "Ole Eskild Steensen",
-                    "title": "Consultant",
+                    "title": "Konsulent",
                     "email": "ole@savvy.no",
-                    "about": "Ole Eskild has experience with a number of technologies and methodologies and has worked with everything from API services and cloud infrastructure to complex frontend applications. He thrives with ownership of the entire technology stack, but also likes to brush up on pure backend or frontend projects."
+                    "about": "Ole Eskild har erfaring med en rekke teknologier og metodikker og har jobbet med alt fra API-tjenester og sky-infrastuktur til komplekse frontend applikasjoner. Han trives best med eierskap til hele teknologi-stacken, men liker også å bryne seg på rene backend eller frontend prosjekter. "
                 },
                 {
                     "imagePath": "/images/people/asbjorn.png",
                     "name": "Asbjørn Rekve",
-                    "title": "Consultant",
+                    "title": "Konsulent",
                     "email": "asbjorn@savvy.no",
-                    "about": "Asbjørn is a versatile developer with broad experience in the development of web solutions. Through projects at Sbanken, the Norwegian Armed Forces, Equinor, and previously as CTO for Powerzeek, he has faced challenging tasks and is used to a great deal of responsibility. He has experience of working both independently and in collaboration with others."
+                    "about": "Asbjørn er en allsidig utvikler med bred kompetanse innen utvikling av webløsninger. Gjennom prosjekter hos Guilty, Sbanken, Forsvaret, Equinor, og tidligere som CTO for Powerzeek, har han hatt utfordrende arbeidsoppgaver og er vant med stort ansvar. Han har erfaring med å jobbe både selvstendig og sammen med andre, og har spesielt god erfaring fra autonome team."
                 },
                 {
                     "imagePath": "/images/header-image-1.png",
-                    "name": "New employee",
-                    "title": "Consultant",
+                    "name": "Ny ansatt",
+                    "title": "Konsulent",
                     "email": "",
-                    "about": "We have a new employee starting in February of 2023!"
+                    "about": "Vi får en ny ansatt i januar!"
+                },
+                {
+                    "imagePath": "/images/header-image-1.png",
+                    "name": "Ny ansatt",
+                    "title": "Konsulent",
+                    "email": "",
+                    "about": "Vi får en ny ansatt i februar!"
                 }
             ]
         },
