@@ -1,18 +1,17 @@
 <template>
     <ThemedForm>
+        <Input v-model="name" placeholder="Navn" name="user_name" required />
+        <Input v-model="company" placeholder="Selskap" name="user_company" />
         <Input
-            v-model="name"
-            placeholder="Your name"
-            name="user_name"
-            required
+            v-model="telephone"
+            placeholder="Telefon"
+            name="user_telephone"
         />
-        <Input v-model="company" placeholder="Company " name="user_company" />
-        <Input v-model="telephone" placeholder="Phone" name="user_telephone" />
-        <Input v-model="message" placeholder="Message" name="user_message" />
+        <Input v-model="message" placeholder="Melding" name="user_message" />
         <div style="display: grid; justify-items: end">
             <a :href="body">
                 <Button color="secondary" type="button" button-type="arrow">
-                    Send request
+                    Send
                 </Button>
             </a>
         </div>

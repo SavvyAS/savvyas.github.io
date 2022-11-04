@@ -24,7 +24,7 @@
                                 </h1>
                                 <AnimatedHeading />
                                 <NuxtLink to="/agency">
-                                    <Button tabindex="-1">The agency</Button>
+                                    <Button tabindex="-1">Selskapet</Button>
                                 </NuxtLink>
                             </div>
                         </div>
@@ -116,7 +116,7 @@
             </HalfImageLayout>
         </section>
         <section>
-            <h2 class="sr-only">Clients</h2>
+            <h2 class="sr-only">Kunder</h2>
             <HorizontalScrollContainer>
                 <div
                     v-for="(client, index) in content.clients"
@@ -142,7 +142,7 @@
                         />
                     </div>
                     <div class="client-card__body">
-                        <p>Client</p>
+                        <p>Kunde</p>
                         <span class="h3">{{ client.name }}</span>
                     </div>
                 </div>

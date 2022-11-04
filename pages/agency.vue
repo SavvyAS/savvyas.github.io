@@ -53,7 +53,7 @@
                                 :href="content.guilty.webpageUrl"
                                 style="width: auto"
                             >
-                                <Button tabindex="-1">Visit Guilty</Button>
+                                <Button tabindex="-1">Besøk Guilty</Button>
                             </a>
                         </div>
                     </template>
@@ -147,7 +147,7 @@
                                     {{ person.email }}
                                 </a>
                                 <Button @click="showSendMessageModal">
-                                    Ask for cv
+                                    Be om CV
                                 </Button>
                                 <div v-if="index === 1" class="graffiti-mobile">
                                     <NuxtImg
@@ -194,7 +194,7 @@ export default {
     },
     head() {
         return {
-            title: this.content.title,
+            title: this.content.metaTitle,
             meta: [
                 {
                     hid: 'description',

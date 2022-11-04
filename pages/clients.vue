@@ -37,7 +37,7 @@
                         </template>
                         <template #body>
                             <div class="vertical-align-center">
-                                <small style="display: block">Client</small>
+                                <small style="display: block">Kunde</small>
 
                                 <span class="h3">{{ client.name }}</span>
 
@@ -45,7 +45,7 @@
 
                                 <a :href="client.websiteUrl">
                                     <Button @click="modal = true">
-                                        Visit {{ client.name }}
+                                        Besøk {{ client.name }}
                                     </Button>
                                 </a>
                             </div>
