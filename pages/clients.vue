@@ -30,7 +30,6 @@
                                     <NuxtImg
                                         :src="client.logoPath"
                                         :alt="client.name + ' logo'"
-                                        format="webp"
                                     />
                                 </div>
                             </div>
